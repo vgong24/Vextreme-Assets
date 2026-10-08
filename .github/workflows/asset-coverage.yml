@@ -30,6 +30,23 @@ jobs:
         if: always()
         run: node -e "const r=require('./asset-audit-report.json'); console.log(JSON.stringify({canonicalAssets:r.canonicalAssets,publicSurface:r.publicSurface,fullPreservedCorpus:{uniqueReferencedAssets:r.fullPreservedCorpus.uniqueReferencedAssets,matchedReferencedAssets:r.fullPreservedCorpus.matchedReferencedAssets,missingReferencedAssets:r.fullPreservedCorpus.missingReferencedAssets,coveragePercent:r.fullPreservedCorpus.coveragePercent,textAssetDependenciesScanned:r.fullPreservedCorpus.textAssetDependenciesScanned}},null,2))"
 
+      - name: Verify deployed public asset bytes
+        shell: bash
+        run: |
+          set -euo pipefail
+          origin="https://vgong24.github.io/Vextreme-Assets"
+          files=(
+            "__assets/8522599a18c34eb608157e8ca1ca617388de8e187c4744d7c7885bc14d1c569f.css"
+            "__assets/297c8def391af561d445c75a946b36d399e208211c115fa6effdf1085c5595a0.png"
+            "__assets/05277887454a79f3b08d8a83685e989b6c46b74d8e48d136b2d16acf77aba4e1.png"
+          )
+          for rel in "${files[@]}"; do
+            out="${RUNNER_TEMP}/$(basename "${rel}")"
+            curl --fail --silent --show-error --location --retry 5 --retry-delay 2 --retry-all-errors "${origin}/${rel}" -o "${out}"
+            cmp "${rel}" "${out}"
+            echo "verified ${origin}/${rel}"
+          done
+
       - name: Upload audit report
         if: always()
         uses: actions/upload-artifact@v4
