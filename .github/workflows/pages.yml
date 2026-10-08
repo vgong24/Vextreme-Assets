@@ -11,6 +11,7 @@ on:
       - "index.html"
       - "public-origin.json"
       - ".github/workflows/pages.yml"
+      - "scripts/prepare-pages-site.mjs"
   pull_request:
     branches:
       - main
@@ -45,11 +46,44 @@ jobs:
         with:
           enablement: true
 
+      - name: Prepare Pages delivery projection
+        run: |
+          rm -rf _site
+          mkdir _site
+          rsync -a --exclude='.git/' --exclude='_site/' ./ _site/
+          node scripts/prepare-pages-site.mjs _site
+          git diff --exit-code -- __assets
+
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Verify deployed public asset graph
+        shell: bash
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          set -euo pipefail
+          origin="${PAGE_URL%/}"
+          css="__assets/8522599a18c34eb608157e8ca1ca617388de8e187c4744d7c7885bc14d1c569f.css"
+          image="__assets/297c8def391af561d445c75a946b36d399e208211c115fa6effdf1085c5595a0.png"
+          sigil="__assets/05277887454a79f3b08d8a83685e989b6c46b74d8e48d136b2d16acf77aba4e1.png"
+          font="__assets/b0c618f6d8ea996806c20d04c7348f3f7c8501de55022e499078cca66d400d89.ttf"
+
+          for rel in "${css}" "${image}" "${sigil}" "${font}"; do
+            out="${RUNNER_TEMP}/live-$(basename "${rel}")"
+            curl --fail --silent --show-error --location --retry 5 --retry-delay 2 --retry-all-errors "${origin}/${rel}" -o "${out}"
+            cmp "_site/${rel}" "${out}"
+            echo "verified ${origin}/${rel}"
+          done
+
+          if grep -q '/__assets/' "${RUNNER_TEMP}/live-$(basename "${css}")"; then
+            echo "root-relative nested asset reference survived Pages projection" >&2
+            exit 1
+          fi
+          grep -F './b0c618f6d8ea996806c20d04c7348f3f7c8501de55022e499078cca66d400d89.ttf' "${RUNNER_TEMP}/live-$(basename "${css}")"
