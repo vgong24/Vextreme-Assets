@@ -14,6 +14,15 @@ The original batch layout remains recoverable in Git history at `cd2b60424c4bb44
 
 Vextreme may change the public asset **origin**, but the content-style asset filename should remain stable.
 
+
+## Pages delivery projection
+
+The canonical repository keeps imported asset bytes unchanged. GitHub project Pages serves this repository below `/Vextreme-Assets/`, while some preserved CSS contains provider-root references such as `url("/__assets/<id>.ttf")`.
+
+The Pages workflow therefore copies the repository into a disposable staging tree and rewrites **staged CSS only** from `/__assets/<id>` to same-directory `./<id>` before upload. Canonical Git blobs remain untouched; images, fonts, and other binary assets remain byte-identical. The post-deploy smoke check compares the served projection against the staging tree and verifies a nested font plus representative public images.
+
+This is a serving adapter, not a change to imported source identity.
+
 ## Audit
 
 ```bash
