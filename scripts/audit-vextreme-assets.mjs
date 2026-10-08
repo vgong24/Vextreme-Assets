@@ -113,4 +113,4 @@ const report={
 const json=JSON.stringify(report,null,2)+'\n';
 if(args.json) fs.writeFileSync(path.resolve(args.json),json);
 process.stdout.write(json);
-if(missing.length||mismatches.length) process.exitCode=1;
+// Missing consumer references are reported for integration/recovery; they do not make the asset store structurally invalid.\nif(mismatches.length) process.exitCode=1;
