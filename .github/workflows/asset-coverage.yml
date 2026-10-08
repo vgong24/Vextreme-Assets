@@ -30,6 +30,35 @@ jobs:
         if: always()
         run: node -e "const r=require('./asset-audit-report.json'); console.log(JSON.stringify({canonicalAssets:r.canonicalAssets,publicSurface:r.publicSurface,fullPreservedCorpus:{uniqueReferencedAssets:r.fullPreservedCorpus.uniqueReferencedAssets,matchedReferencedAssets:r.fullPreservedCorpus.matchedReferencedAssets,missingReferencedAssets:r.fullPreservedCorpus.missingReferencedAssets,coveragePercent:r.fullPreservedCorpus.coveragePercent,textAssetDependenciesScanned:r.fullPreservedCorpus.textAssetDependenciesScanned}},null,2))"
 
+      - name: Prove Pages delivery projection without mutating canonical assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf _site-smoke
+          mkdir _site-smoke
+          rsync -a --exclude='.git/' --exclude='_site-smoke/' ./ _site-smoke/
+          node scripts/prepare-pages-site.mjs _site-smoke
+          git diff --exit-code -- __assets
+          ! grep -R --include='*.css' -n '/__assets/' _site-smoke/__assets
+          grep -F './b0c618f6d8ea996806c20d04c7348f3f7c8501de55022e499078cca66d400d89.ttf' _site-smoke/__assets/8522599a18c34eb608157e8ca1ca617388de8e187c4744d7c7885bc14d1c569f.css
+
+      - name: Verify current public origin is reachable
+        shell: bash
+        run: |
+          set -euo pipefail
+          origin="https://vgong24.github.io/Vextreme-Assets"
+          css="__assets/8522599a18c34eb608157e8ca1ca617388de8e187c4744d7c7885bc14d1c569f.css"
+          image="__assets/297c8def391af561d445c75a946b36d399e208211c115fa6effdf1085c5595a0.png"
+          sigil="__assets/05277887454a79f3b08d8a83685e989b6c46b74d8e48d136b2d16acf77aba4e1.png"
+
+          curl --fail --silent --show-error --location --retry 5 --retry-delay 2 --retry-all-errors "${origin}/${css}" -o "${RUNNER_TEMP}/live.css"
+          test -s "${RUNNER_TEMP}/live.css"
+          for rel in "${image}" "${sigil}"; do
+            out="${RUNNER_TEMP}/$(basename "${rel}")"
+            curl --fail --silent --show-error --location --retry 5 --retry-delay 2 --retry-all-errors "${origin}/${rel}" -o "${out}"
+            cmp "${rel}" "${out}"
+          done
+
       - name: Upload audit report
         if: always()
         uses: actions/upload-artifact@v4
