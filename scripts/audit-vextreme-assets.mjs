@@ -39,6 +39,33 @@ function digest(file){
   h.update(fs.readFileSync(file));
   return h.digest('hex');
 }
+function publicSurface(rel){
+  return rel==='index.html'
+    || rel==='sw.js'
+    || rel.startsWith('pages/')
+    || rel.startsWith('styles/')
+    || rel.startsWith('widgets/')
+    || rel.startsWith('dist/')
+    || rel.startsWith('data/');
+}
+function addRef(map,name,source){
+  name=name.toLowerCase();
+  if(!map.has(name)) map.set(name,new Set());
+  map.get(name).add(source);
+}
+function summarize(map,byName){
+  const refs=[...map.keys()].sort();
+  const matched=refs.filter(x=>byName.has(x));
+  const missing=refs.filter(x=>!byName.has(x));
+  return {
+    uniqueReferencedAssets:refs.length,
+    matchedReferencedAssets:matched.length,
+    missingReferencedAssets:missing.length,
+    coveragePercent:refs.length?Number((matched.length*100/refs.length).toFixed(2)):100,
+    missing:missing.map(name=>({name,referencedBy:[...map.get(name)].sort()})),
+    matched
+  };
+}
 
 const args=parseArgs(process.argv.slice(2));
 const here=path.dirname(fileURLToPath(import.meta.url));
@@ -54,12 +81,8 @@ for(const file of walk(assetRoot)){
   byName.set(name,file);
 }
 
-const referrers=new Map();
-const addRef=(name,source)=>{
-  name=name.toLowerCase();
-  if(!referrers.has(name)) referrers.set(name,new Set());
-  referrers.get(name).add(source);
-};
+const allReferrers=new Map();
+const publicReferrers=new Map();
 
 for(const file of walk(vextremeRoot,new Set(['.git','node_modules']))){
   const ext=path.extname(file).toLowerCase();
@@ -67,50 +90,73 @@ for(const file of walk(vextremeRoot,new Set(['.git','node_modules']))){
   let stat; try{stat=fs.statSync(file);}catch{continue;}
   if(stat.size>MAX_TEXT_BYTES) continue;
   let text; try{text=fs.readFileSync(file,'utf8');}catch{continue;}
-  for(const name of extractRefs(text)) addRef(name,path.relative(vextremeRoot,file).split(path.sep).join('/'));
+  const rel=path.relative(vextremeRoot,file).split(path.sep).join('/');
+  const isPublic=publicSurface(rel);
+  for(const name of extractRefs(text)){
+    addRef(allReferrers,name,rel);
+    if(isPublic) addRef(publicReferrers,name,rel);
+  }
 }
 
 // Follow dependencies from referenced text assets (for example CSS -> fonts/images).
-const queue=[...referrers.keys()];
-const scannedTextAssets=new Set();
-for(let i=0;i<queue.length;i++){
-  const name=queue[i], file=byName.get(name);
-  if(!file || scannedTextAssets.has(name) || !TEXT_EXT.has(path.extname(name).toLowerCase())) continue;
-  scannedTextAssets.add(name);
-  let text; try{text=fs.readFileSync(file,'utf8');}catch{continue;}
-  for(const nested of extractRefs(text)){
-    const isNew=!referrers.has(nested);
-    addRef(nested,'asset:'+name);
-    if(isNew) queue.push(nested);
+const scanDependencies=(map,label)=>{
+  const queue=[...map.keys()];
+  const scanned=new Set();
+  for(let i=0;i<queue.length;i++){
+    const name=queue[i], file=byName.get(name);
+    if(!file || scanned.has(name) || !TEXT_EXT.has(path.extname(name).toLowerCase())) continue;
+    scanned.add(name);
+    let text; try{text=fs.readFileSync(file,'utf8');}catch{continue;}
+    for(const nested of extractRefs(text)){
+      const isNew=!map.has(nested);
+      addRef(map,nested,label+name);
+      if(isNew) queue.push(nested);
+    }
+  }
+  return scanned;
+};
+const allTextDeps=scanDependencies(allReferrers,'asset:');
+const publicTextDeps=scanDependencies(publicReferrers,'asset-public:');
+
+const allSummary=summarize(allReferrers,byName);
+const publicSummary=summarize(publicReferrers,byName);
+
+const checksumMismatches=[];
+if(args.verifyHashes){
+  for(const name of allSummary.matched){
+    const expected=name.slice(0,64), observed=digest(byName.get(name));
+    if(observed!==expected) checksumMismatches.push({name,expected,observed});
   }
 }
 
-const refs=[...referrers.keys()].sort();
-const matched=refs.filter(x=>byName.has(x));
-const missing=refs.filter(x=>!byName.has(x));
-const mismatches=[];
-if(args.verifyHashes){
-  for(const name of matched){
-    const expected=name.slice(0,64), observed=digest(byName.get(name));
-    if(observed!==expected) mismatches.push({name,expected,observed});
-  }
-}
 const report={
-  schemaVersion:'vextreme-assets.audit-report/v1',
+  schemaVersion:'vextreme-assets.audit-report/v2',
   canonicalAssets:byName.size,
-  uniqueReferencedAssets:refs.length,
-  matchedReferencedAssets:matched.length,
-  missingReferencedAssets:missing.length,
-  coveragePercent:refs.length?Number((matched.length*100/refs.length).toFixed(2)):100,
-  textAssetDependenciesScanned:scannedTextAssets.size,
+  publicSurface:{
+    uniqueReferencedAssets:publicSummary.uniqueReferencedAssets,
+    matchedReferencedAssets:publicSummary.matchedReferencedAssets,
+    missingReferencedAssets:publicSummary.missingReferencedAssets,
+    coveragePercent:publicSummary.coveragePercent,
+    textAssetDependenciesScanned:publicTextDeps.size,
+    missing:publicSummary.missing
+  },
+  fullPreservedCorpus:{
+    uniqueReferencedAssets:allSummary.uniqueReferencedAssets,
+    matchedReferencedAssets:allSummary.matchedReferencedAssets,
+    missingReferencedAssets:allSummary.missingReferencedAssets,
+    coveragePercent:allSummary.coveragePercent,
+    textAssetDependenciesScanned:allTextDeps.size,
+    missing:allSummary.missing
+  },
   contentHashesVerified:args.verifyHashes,
-  checksumMismatchCount:mismatches.length,
-  checksumMismatches:mismatches,
-  missing:missing.map(name=>({name,referencedBy:[...referrers.get(name)].sort()})),
-  matched:matched.map(name=>({name,referencedBy:[...referrers.get(name)].sort()})),
-  unreferencedCanonicalAssets:[...byName.keys()].filter(x=>!referrers.has(x)).sort()
+  checksumMismatchCount:checksumMismatches.length,
+  checksumMismatches,
+  unreferencedCanonicalAssets:[...byName.keys()].filter(x=>!allReferrers.has(x)).sort()
 };
 const json=JSON.stringify(report,null,2)+'\n';
 if(args.json) fs.writeFileSync(path.resolve(args.json),json);
 process.stdout.write(json);
-// Missing consumer references are reported for integration/recovery; they do not make the asset store structurally invalid.\nif(mismatches.length) process.exitCode=1;
+
+// The public/runtime surface is the blocking preservation contract.
+// Archival-only misses remain visible findings without blocking the store.
+if(publicSummary.missingReferencedAssets||checksumMismatches.length) process.exitCode=1;
