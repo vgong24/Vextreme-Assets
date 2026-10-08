@@ -9,7 +9,13 @@ on:
       - "asset-manifest.json"
       - ".nojekyll"
       - "index.html"
+      - "public-origin.json"
       - ".github/workflows/pages.yml"
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
   workflow_dispatch:
 
 permissions:
@@ -23,12 +29,13 @@ concurrency:
 
 jobs:
   deploy:
+    if: github.event_name != 'pull_request' || github.event.pull_request.merged == true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout asset store
+      - name: Checkout merged asset store
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
