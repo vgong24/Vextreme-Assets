@@ -28,7 +28,7 @@ jobs:
 
       - name: Print audit summary
         if: always()
-        run: node -e "const r=require('./asset-audit-report.json'); console.log(JSON.stringify({canonicalAssets:r.canonicalAssets,uniqueReferencedAssets:r.uniqueReferencedAssets,matchedReferencedAssets:r.matchedReferencedAssets,missingReferencedAssets:r.missingReferencedAssets,coveragePercent:r.coveragePercent,textAssetDependenciesScanned:r.textAssetDependenciesScanned},null,2))"
+        run: node -e "const r=require('./asset-audit-report.json'); console.log(JSON.stringify({canonicalAssets:r.canonicalAssets,publicSurface:r.publicSurface,fullPreservedCorpus:{uniqueReferencedAssets:r.fullPreservedCorpus.uniqueReferencedAssets,matchedReferencedAssets:r.fullPreservedCorpus.matchedReferencedAssets,missingReferencedAssets:r.fullPreservedCorpus.missingReferencedAssets,coveragePercent:r.fullPreservedCorpus.coveragePercent,textAssetDependenciesScanned:r.fullPreservedCorpus.textAssetDependenciesScanned}},null,2))"
 
       - name: Upload audit report
         if: always()
