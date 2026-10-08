@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Courier Prime";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/bd12ef32d23cbfd035a1c235d4ce5cc0d7375ec9a4be1353c153c86c8d5e19fa.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Courier Prime";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/f0a8387e66662255cedd1196c2a103d4d31750b08844199e33b1dd4c43ad621a.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Courier Prime";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/__assets/51c1aec385e7d8466be2e63d1ffc06c046323fa82348bde8ff12a671e6c8bd8a.ttf") format("truetype");
+}
+@font-face {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/0fb425c58bfeabd618cd81030d14f88a4971e54ba0a2cf2b18b5315f5cd1bf1c.ttf") format("truetype");
+}
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/09ea70d82d0ff88a25b2b094c23109790e79a8d13e3bacc2110fe8f9e268761d.ttf") format("truetype");
+}
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/01985dcde7eef1ad5e0d8ee0f6818c1414bb5f611a092a0782d8f62bb19489b9.ttf") format("truetype");
+}

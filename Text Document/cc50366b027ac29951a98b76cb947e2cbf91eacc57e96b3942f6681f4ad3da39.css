@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/99d5ea1c76e9b89a2f616e3034ace2c2f3d95ec18c8078a10b1596c567deed2c.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/16614f6ffef614185889305922cc3a3eea982506eacdabce52f06d8d58e5b3e3.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/9baf16aadfb7ffab2ce136e04572fc56fcefaa1b29e133801039ec9e5c29ee43.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Serif SC";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/e003eb7376c2d89cfc867b60eea028cb228c81303874e3ea2d32a61863c201c9.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Serif SC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/c5d53f3aebe12807695479e6190d5f94872190d438e06e39809bd83674c17214.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Serif SC";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/55ca7b47574af0a327a529f4db4cf872b17ed052d03d832bc5d51acce1d440e2.ttf") format("truetype");
+}

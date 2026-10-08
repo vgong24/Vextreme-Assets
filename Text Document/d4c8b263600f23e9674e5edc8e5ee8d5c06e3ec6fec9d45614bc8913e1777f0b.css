@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/d90cebc85b32d58df0774f57c839284c965c1198aa82b67a6db2be76dd081f07.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/b883796f2d36380ee678304b41152aa60b667b4cb3c30492c1198f0e4cf1c2ad.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/7b56c437cef01b08e844a495333cb1473be2158ffad27400fcfd6c939b900c14.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/c8f8c7f5ed539bb424ee0c70890bb008b98bfbdd6646907be32df4dd6c439a9b.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/26bad053b5abef0e195b4d7c7db99fca0b6d32d94775a533bbbe1eb424e8108e.ttf") format("truetype");
+}

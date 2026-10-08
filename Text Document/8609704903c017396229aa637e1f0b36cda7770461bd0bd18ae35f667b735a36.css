@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/b0c618f6d8ea996806c20d04c7348f3f7c8501de55022e499078cca66d400d89.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/1a6844598cfc2dfd164dc024f29aa3b3ed4f0fe1e50ed5e788a1932bcb64b6ef.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/289d2aa8e0ed6731529209b3144c1db2c7144f263e49de695ff80b364f3f9f32.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/e365077394b3cd598cba1dc342fd8cdb81db36de31530888a75e07873d1c846d.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/d6c65600eb0149bc0e2d25af57290a05b310141d46a5516edec93d0afcb5c7c0.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/3208926ba69d6886481d3ee0e426838953319bd7dc3acd3dc20e6db0df1a916b.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/__assets/151ae355673a29361ba9f70626c26df396b6185d34a0a6a78d10895d3e38c3f5.ttf") format("truetype");
+}

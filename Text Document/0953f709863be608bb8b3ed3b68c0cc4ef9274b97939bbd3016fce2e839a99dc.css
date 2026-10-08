@@ -1,0 +1,265 @@
+/**
+ * styles/squarespace-overrides.css
+ *
+ * Squarespace-specific selector overrides.
+ * Loaded ONLY on squarespace environment via the loader.
+ * Never link this on GitHub Pages or any non-Squarespace host.
+ *
+ * PURPOSE:
+ *   Squarespace's own CSS takes over raw elements and its own
+ *   component classes (.header-nav, .sqs-block-code, etc.).
+ *   This file re-applies the vextreme design system on top of
+ *   those Squarespace defaults using its own class names.
+ *
+ * STRUCTURE:
+ *   1. Layout fixes      — section padding, code block spacing
+ *   2. Header + nav      — desktop nav bar
+ *   3. Dropdown menus    — folder/subnav panels
+ *   4. Mobile nav        — overlay menu
+ *   5. Feature image     — standard image utility class
+ *
+ * DO NOT put design tokens here. Values reference CSS variables
+ * from design-system.css (--ember, --stone, --border, etc.).
+ * If design-system.css isn't loaded, these fall back to literals.
+ */
+
+
+/* ── 1. LAYOUT FIXES ─────────────────────────────────────── */
+
+.page-section {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.page-section:first-child {
+  padding-top: 20px !important;
+}
+
+@media (max-width: 768px) {
+  .page-section:first-child {
+    padding-top: 40px !important;
+  }
+}
+
+.page-section .content-wrapper {
+  background: var(--cream, #fafaf9) !important;
+}
+
+/* Remove padding Squarespace adds around code blocks */
+.sqs-block-code .sqs-block-content {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.sqs-block-code:first-child,
+.sqs-block-code {
+  margin-top: 0 !important;
+}
+
+/* Hide empty blocks Squarespace sometimes inserts */
+.sqs-block-code:empty,
+.sqs-block:empty {
+  display: none !important;
+}
+
+
+/* ── 2. HEADER + NAV ─────────────────────────────────────── */
+
+header,
+.header-nav,
+#header,
+.site-header {
+  background: var(--cream, #fafaf9) !important;
+  border-bottom: 1px solid var(--border, #e7e5e4) !important;
+  box-shadow: none !important;
+}
+
+/* Site title */
+.site-title a,
+.header-title a {
+  font-family: var(--serif, "Source Serif 4", Georgia, serif) !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: var(--stone, #1c1917) !important;
+  letter-spacing: -0.01em !important;
+  text-decoration: none !important;
+}
+
+/* Nav links */
+.header-nav a,
+.nav-wrapper a,
+.header-nav-item a {
+  font-family: var(--sans, "IBM Plex Sans", sans-serif) !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: var(--muted, #78716c) !important;
+  letter-spacing: 0.2px !important;
+  text-decoration: none !important;
+  text-transform: none !important;
+}
+
+/* Nav hover + active */
+.header-nav a:hover,
+.header-nav-item a:hover,
+.header-nav-item--active a {
+  color: var(--ember, #b45830) !important;
+}
+
+/* Folder title — matches nav link weight */
+.header-nav-folder-title {
+  font-family: var(--sans, "IBM Plex Sans", sans-serif) !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: var(--muted, #78716c) !important;
+  letter-spacing: 0.2px !important;
+  text-transform: none !important;
+}
+
+.header-nav-folder-title:hover {
+  color: var(--ember, #b45830) !important;
+}
+
+/* Chevron indicator on folder items */
+.header-nav-folder-title::after {
+  content: " ⌄" !important;
+  font-size: 11px !important;
+  color: var(--ember, #b45830) !important;
+  margin-left: 3px !important;
+  vertical-align: middle !important;
+}
+
+/* Also target the wrapper Squarespace sometimes adds */
+.header-nav-item--folder > a,
+.header-nav-item--folder > span {
+  font-family: var(--sans, "IBM Plex Sans", sans-serif) !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: var(--muted, #78716c) !important;
+  letter-spacing: 0.2px !important;
+}
+
+
+/* ── 3. DROPDOWN MENUS ───────────────────────────────────── */
+
+.header-nav-folder-content,
+.header-nav .subnav,
+[data-folder] .header-nav-folder-content {
+  background: var(--cream, #fafaf9) !important;
+  border: 1px solid var(--border, #e7e5e4) !important;
+  border-top: 2px solid var(--ember, #b45830) !important;
+  border-radius: 0 0 6px 6px !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06) !important;
+  padding: 6px 0 !important;
+}
+
+/* Dropdown links */
+.header-nav-folder-content .header-nav-item a,
+.header-nav .subnav a {
+  font-family: var(--sans, "IBM Plex Sans", sans-serif) !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  color: var(--muted, #78716c) !important;
+  padding: 9px 20px !important;
+  display: block !important;
+  text-align: left !important;
+  text-decoration: none !important;
+  letter-spacing: 0.1px !important;
+}
+
+/* Dropdown link hover */
+.header-nav-folder-content .header-nav-item a:hover,
+.header-nav .subnav a:hover {
+  color: var(--ember, #b45830) !important;
+  background: var(--ember-bg, #fdf8f6) !important;
+  padding-left: 24px !important;
+  transition: all 0.15s ease !important;
+}
+
+
+/* ── 4. MOBILE NAV OVERLAY ───────────────────────────────── */
+
+.header-menu,
+.header-menu-overlay,
+.header-menu-nav,
+.site-header--open .header-menu,
+.header--menu-open .header-menu,
+.header-menu-nav-folder-content {
+  background-color: var(--cream, #fafaf9) !important;
+}
+
+.header-menu-nav-list {
+  padding: 12px 0 !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+}
+
+/* Primary mobile nav links */
+.header-menu-nav-item a,
+.header-menu-nav-item--active a,
+.header-menu-nav-folder-title {
+  font-family: var(--sans, "IBM Plex Sans", sans-serif) !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.3px !important;
+  color: var(--stone, #1c1917) !important;
+  text-transform: none !important;
+  line-height: 1.4 !important;
+  text-decoration: none !important;
+  text-align: left !important;
+  padding: 10px 0 !important;
+  display: block !important;
+  transition: color 0.15s ease !important;
+}
+
+.header-menu-nav-item a:hover,
+.header-menu-nav-folder-title:hover {
+  color: var(--ember, #b45830) !important;
+}
+
+.header-menu-nav-item--active a {
+  color: var(--ember, #b45830) !important;
+  font-weight: 500 !important;
+}
+
+/* Mobile nav item dividers */
+.header-menu-nav-item {
+  border-bottom: 1px solid var(--border, #e7e5e4) !important;
+  text-align: left !important;
+}
+
+.header-menu-nav-item:last-child {
+  border-bottom: none !important;
+}
+
+/* Mobile folder sub-items */
+.header-menu-nav-folder-content .header-menu-nav-item a {
+  font-size: 12px !important;
+  color: var(--muted, #78716c) !important;
+  padding: 7px 0 !important;
+}
+
+.header-menu-nav-folder-content .header-menu-nav-item a:hover {
+  color: var(--ember, #b45830) !important;
+}
+
+.header-menu-nav-folder-content .header-menu-nav-item {
+  border-bottom: 1px solid #f0efee !important;
+}
+
+/* Mobile folder chevron */
+.header-menu-nav-folder-title svg,
+.header-menu-nav-folder-toggle svg {
+  stroke: var(--muted, #78716c) !important;
+}
+
+
+/* ── 5. FEATURE IMAGE ────────────────────────────────────── */
+
+.feature-img {
+  display: block !important;
+  max-width: 560px !important;
+  width: 100% !important;
+  margin: 0 auto clamp(24px, 4vw, 36px) !important;
+  border-radius: 10px !important;
+  border: 1px solid var(--border, #e7e5e4) !important;
+}

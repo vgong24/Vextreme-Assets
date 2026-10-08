@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "DM Mono";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/c12cdadcd7cd25d69c48d425f14eb496c75b7773cf9524d30d5da1e2269a698f.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DM Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/38f8abefb8f859c48db26b26879c08e5406355580da80b60e89c36d09fe82830.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/386dc5bed03b557b55e37d908501882c36b485a39f49856ccdf1f88b9234d2c1.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/68db300b3e14e7a304ca7112e6af1caa151c19b4be0f251337a1c3f2caffd1bd.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/7b56c437cef01b08e844a495333cb1473be2158ffad27400fcfd6c939b900c14.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/c8f8c7f5ed539bb424ee0c70890bb008b98bfbdd6646907be32df4dd6c439a9b.ttf") format("truetype");
+}

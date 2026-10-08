@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/75f24b1771ed59f0d7f44d445ca5b7abccf8bae26a7b1f4b9ed5807e8746054f.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/34ae811a8416be844efd8ec13cc4a4b6f814e677e36e510a2d4187feaa8c3807.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/738d3a64ab97b455d91bd5d71d303887c2b43c5180660ef218e37c275678c2fd.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/d0e784ef034da1aac9143171aac8718b28b6b83196db313be83f0f245c4aacef.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/5ae86d38cfa3525e92c4f7aacdb7ef34ab325268695f2a0ec4d8854b10d8555c.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/__assets/c67a6241b1e0d6ae2edabcee5df78444025d60ff618df57cea7fde70c1d71382.ttf") format("truetype");
+}

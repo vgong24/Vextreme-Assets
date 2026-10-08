@@ -1,0 +1,236 @@
+/**
+ * styles/arc-nav.css
+ *
+ * Styles for the VEXTREME arc navigation widget.
+ * Previously injected at runtime via injectStyles() inside the footer script.
+ * Now a proper stylesheet — link in <head> on every page, or include in your
+ * global stylesheet bundle.
+ *
+ * Depends on: styles/design-system.css (for CSS vars --ember, --stone, etc.)
+ * Used by:    lib/arc-nav.js (renders the HTML these classes target)
+ */
+
+/* ── Widget container ── */
+.arc-nav {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: clamp(20px, 3vw, 28px);
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-family: var(--sans);
+}
+
+.arc-nav + .arc-nav {
+  margin-top: 10px;
+}
+
+/* ── Parent arc link ── */
+.arc-nav-parent-link {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ember);
+  text-decoration: none;
+}
+
+.arc-nav-parent-link:hover {
+  text-decoration: underline;
+}
+
+/* ── Row header: arc label + position counter + arrows ── */
+.arc-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+
+.arc-nav-title {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.arc-nav-row-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.arc-nav-position {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ember);
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* ── Dot row ── */
+.arc-nav-dots {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.arc-nav-dots::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Individual dot ── */
+.arc-dot-wrap {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.arc-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  background: white;
+  cursor: pointer;
+  flex-shrink: 0;
+  text-decoration: none;
+  display: block;
+  transition: background 0.15s, border-color 0.15s, transform 0.15s;
+}
+
+.arc-dot:hover {
+  border-color: var(--ember);
+  transform: scale(1.25);
+}
+
+.arc-dot.active {
+  background: var(--ember);
+  border-color: var(--ember);
+  width: 10px;
+  height: 10px;
+}
+
+.arc-dot.visited {
+  background: var(--border);
+  border-color: #d6d3d1;
+}
+
+/* ── Connectors between dots ── */
+.arc-connector {
+  width: clamp(14px, 2.5vw, 24px);
+  height: 1px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+.arc-connector.passed {
+  background: #d6d3d1;
+}
+
+/* ── Gap between sections (small dot marker) ── */
+.arc-section-gap {
+  width: clamp(6px, 1.2vw, 12px);
+  height: 1px;
+  background: transparent;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.arc-section-gap::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+/* ── Arc row: the whole block for one arc ── */
+.arc-nav-row {
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.arc-nav-row:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Position-only row (full_timeline renderMode) ── */
+.arc-nav-row--position {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+  opacity: 0.7;
+}
+
+.arc-nav-row--position:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Prev / Next arrows ── */
+.arc-nav-arrow {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 3px 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.arc-nav-arrow:hover {
+  color: var(--ember);
+  border-color: var(--ember);
+}
+
+.arc-nav-arrow.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* ── "You are here" footer ── */
+.arc-nav-current {
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+  margin-top: 0;
+}
+
+.arc-nav-current-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-bottom: 3px;
+}
+
+.arc-nav-current-title {
+  font-family: var(--serif);
+  font-size: clamp(13px, 1.5vw, 15px);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--stone);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

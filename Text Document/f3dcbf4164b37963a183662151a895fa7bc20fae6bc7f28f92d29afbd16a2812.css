@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/b1918663f099da1fe7502f1459c275483378f5de4505e6fc9dba419931092f61.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/374c6c52ce838c05f035564add3e265b3be1a21fcfcfec4184abebd399a4589f.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/__assets/9872c1a09b5393dfcfe956ea021fb8e76fff55b3054a0ae48ac0f80b42919871.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/911bf559d287436e5fd68ad1d4e6d25e66fb86d20747d97d5e8b25ad8efc235c.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/bb8f3c3b0ca40380ad4763e58e8c82cb289a9647e74514948c730e6a16b6cabb.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/75407d22188550d679e0d74a9227548b882fe282d70e71e424f1fcd3aeade3a6.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/__assets/705776b6237d1fd4dec3d53fe261487c9f0a8c89a62ca1be9d1ff1ce40431e9e.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/ee9558be9f8a4d750ce42b6f6306687b5e535a575e9dc00323674539c17f090c.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/a699af1dea30b799318e058c03ae61680de787476d635909fbb0354740971bab.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/e45972c7e9f24dc390848eb598daf023bc4e4284384ba7bb6696dc53c9e90a67.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/__assets/87e867b52640b3b397a977c3046d1cc543ecde56ff4d0fd14bc53b812bc940ed.ttf") format("truetype");
+}

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Calibri";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/__assets/2a91b86e9f88c20ae5910e2b2c17f5e65b95f970ed2fc0e45b04302489921670.html") format("truetype");
+}
+@font-face {
+  font-family: "Calibri";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/__assets/0532bc3dff6468a60aa4b117df02f01a9b81af8d4843eb5ad9352d675e5f1e8e.html") format("truetype");
+}
+@font-face {
+  font-family: "Consolas";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/__assets/e76ca17a37ae190ac1085ebb716e330c126a297ea1c49355f8c678edc9abe228.html") format("truetype");
+}

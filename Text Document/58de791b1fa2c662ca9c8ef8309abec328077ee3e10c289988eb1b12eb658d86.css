@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/79347ed53aa14e8b77ee572e286feae732f5074f69f323eff4bcd27941450c64.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/72025d9b68a7dd0b68ebc1d5de2c84f44879e716aa6b97b18ada1fc47bbe9f46.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/__assets/959364b06f81af7e1c72b4fede563ec59b7988508e4084ba5e7eb13f37a9d083.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/a699af1dea30b799318e058c03ae61680de787476d635909fbb0354740971bab.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/e45972c7e9f24dc390848eb598daf023bc4e4284384ba7bb6696dc53c9e90a67.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/__assets/87e867b52640b3b397a977c3046d1cc543ecde56ff4d0fd14bc53b812bc940ed.ttf") format("truetype");
+}

@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/8fcb87e14e8cef855415fa26a8a862c4c6d90ef6aaa51639b85b2606137aeacd.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/b0c618f6d8ea996806c20d04c7348f3f7c8501de55022e499078cca66d400d89.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/__assets/feead6344d56160370c1d171e450e92d0cfae3f270e9ec0019811e3f6cae4011.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/__assets/e78ac241901e313f3100835af8299a7bae0b0dea058c44fb67bce28d0fd80180.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/__assets/a3a74cc1b1d04368589281d97dd87b2dbb58ee33499b631f892bf3b3863ffbbe.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/__assets/1a9cad03d35e9bb1bd76391e89761301ae10f54746183ed7781d43c40643558c.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/__assets/8da5dfcdccfbe404eace2e760de464ab617a4c580b76159f16d61eb357af6756.ttf") format("truetype");
+}

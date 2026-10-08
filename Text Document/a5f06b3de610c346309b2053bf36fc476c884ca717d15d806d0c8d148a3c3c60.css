@@ -1,0 +1,684 @@
+/**
+ * styles/design-system.css
+ *
+ * Global design tokens and shared UI classes for vextreme24.com.
+ * Include once in your global <head>. Everything else imports from this.
+ *
+ * SECTIONS:
+ *   1. Reset
+ *   2. CSS Variables (tokens)
+ *   3. Typography utilities
+ *   4. Layout utilities
+ *   5. Section toggle (archives page expand/collapse)
+ *   6. Entry list + entry row
+ *   7. Entry row variants (visual registers per content type)
+ *   8. Pills
+ *   9. Source link
+ *  10. Dividers
+ */
+
+
+/* ─────────────────────────────────────────────
+   1. RESET
+   ───────────────────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ─────────────────────────────────────────────
+   2. CSS VARIABLES — design tokens
+   ───────────────────────────────────────────── */
+
+:root {
+  --cream:    #fafaf9;
+  --stone:    #1c1917;
+  --muted:    #78716c;
+  --border:   #e7e5e4;
+  --ember:    #b45830;
+  --ember-bg: #fdf8f6;
+
+  --serif: "Source Serif 4", Georgia, serif;
+  --sans:  "IBM Plex Sans", sans-serif;
+  --mono:  "IBM Plex Mono", monospace;
+}
+
+/* ── Dashboard / dev-tool dark theme ────────────────────────────────────────
+   Consolidates the identical local :root block previously duplicated inline
+   in lib/build-archives.js, lib/build-demo.js, lib/build-specimens.js, and
+   pages/specimen-architectural-wisdoms.html (td-007; see
+   docs/architecture/12-design-system.md for the full history). Scoped under
+   [data-theme="dashboard"] so it coexists with the light :root above without
+   collision — a page opts in with <html data-theme="dashboard"> and links
+   this stylesheet, same as any light-theme page. Token names are kept as the
+   original dark-theme vocabulary (--bg/--surface/--text), not renamed to
+   --cream/--stone, because it distinguishes a page background from a card
+   background (--surface) — a distinction the light theme's single --cream
+   does not currently make. --blue is used only by
+   pages/specimen-architectural-wisdoms.html; harmless no-op for the others. */
+[data-theme="dashboard"] {
+  --bg:      #0e0e0e;
+  --surface: #111111;
+  --text:    #e8e8e4;
+  --muted:   #6b6b6b;
+  --ember:   #c8502a;
+  --border:  #2a2a2a;
+  --blue:    #4a9eff;
+  --mono:    "IBM Plex Mono", monospace;
+  --sans:    "IBM Plex Sans", sans-serif;
+}
+
+/* ── Institutional / Vextreme Design Foundation theme ───────────────────────
+   Third token family, carried from PR #135 into the accepted institutional
+   surface contract. Black and white provide identity, a cool neutral ramp
+   provides structure, and status hues are reserved for evidentiary state.
+
+   Both attribute values match the shared block because they are mutually
+   exclusive values on one element. Light mode overrides only the ramp and
+   the few semantics that genuinely change; typography, spacing, radius, and
+   motion keep one definition. */
+[data-theme="foundation"],
+[data-theme="foundation-light"] {
+  --gray-0: oklch(13.5% 0.004 258);
+  --gray-1: oklch(16.5% 0.004 258);
+  --gray-2: oklch(20% 0.005 258);
+  --gray-3: oklch(24.5% 0.006 258);
+  --gray-4: oklch(30% 0.007 258);
+  --gray-5: oklch(38% 0.008 258);
+  --gray-6: oklch(48% 0.008 258);
+  --gray-7: oklch(62% 0.007 258);
+  --gray-8: oklch(80% 0.005 258);
+  --gray-9: oklch(97% 0.002 258);
+
+  --black: oklch(9% 0.003 258);
+  --white: oklch(99% 0.002 258);
+
+  --bg-canvas:         var(--gray-0);
+  --bg-surface:        var(--gray-1);
+  --bg-surface-raised: var(--gray-2);
+  --bg-overlay:        var(--gray-3);
+  --bg-inverse:        var(--white);
+
+  --text-primary:    var(--gray-9);
+  --text-secondary:  var(--gray-8);
+  --text-tertiary:   var(--gray-7);
+  --text-inverse:    var(--black);
+  --text-on-inverse: var(--white);
+
+  --border-subtle:  var(--gray-4);
+  --border-default: var(--gray-5);
+  --border-strong:  var(--gray-6);
+  --border-focus:   var(--gray-9);
+
+  --accent-fg:      var(--white);
+  --accent-bg:      var(--white);
+  --accent-text-on: var(--black);
+
+  --status-success:  oklch(62% 0.11 155);
+  --status-caution:  oklch(72% 0.13 85);
+  --status-critical: oklch(58% 0.15 25);
+  --status-info:     oklch(65% 0.06 258);
+
+  --shadow-color: 258 8% 2%;
+  --shadow-1: 0 1px 2px hsl(var(--shadow-color) / 0.4);
+  --shadow-2: 0 4px 16px hsl(var(--shadow-color) / 0.45);
+
+  --font-serif: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --font-sans:  "IBM Plex Sans", -apple-system, "Segoe UI", sans-serif;
+  --font-mono:  "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+
+  --text-display: 600 clamp(2.25rem, 2.1rem + 2.2vw, 4.25rem)/1.05 var(--font-serif);
+  --text-h1: 600 clamp(1.9rem, 1.7rem + 1.1vw, 2.75rem)/1.12 var(--font-serif);
+  --text-h2: 500 clamp(1.4rem, 1.3rem + 0.6vw, 1.9rem)/1.22 var(--font-serif);
+  --text-h3: 500 1.3rem/1.32 var(--font-serif);
+
+  --text-body-lg: 400 1.125rem/1.62 var(--font-sans);
+  --text-body:    400 1rem/1.62 var(--font-sans);
+  --text-body-sm: 400 0.875rem/1.55 var(--font-sans);
+  --text-label:   600 0.8125rem/1.3 var(--font-sans);
+  --text-caption: 500 0.75rem/1.4 var(--font-sans);
+
+  --text-mono-md: 400 0.875rem/1.5 var(--font-mono);
+  --text-mono-sm: 500 0.75rem/1.45 var(--font-mono);
+  --text-mono-xs: 500 0.6875rem/1.4 var(--font-mono);
+
+  --tracking-mono: 0.02em;
+  --tracking-label: 0.03em;
+  --tracking-display: -0.01em;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-full: 999px;
+
+  --border-w: 1px;
+  --border-w-strong: 1.5px;
+
+  --measure: 62ch;
+  --measure-narrow: 46ch;
+
+  --ease-standard: cubic-bezier(0.2, 0.6, 0.2, 1);
+  --duration-fast: 120ms;
+  --duration-base: 180ms;
+}
+
+[data-theme="foundation"] {
+  color-scheme: dark;
+}
+
+[data-theme="foundation-light"] {
+  color-scheme: light;
+
+  --gray-0: oklch(99% 0.002 258);
+  --gray-1: oklch(97.5% 0.003 258);
+  --gray-2: oklch(95.5% 0.004 258);
+  --gray-3: oklch(92.5% 0.005 258);
+  --gray-4: oklch(88% 0.006 258);
+  --gray-5: oklch(80% 0.007 258);
+  --gray-6: oklch(66% 0.008 258);
+  --gray-7: oklch(50% 0.008 258);
+  --gray-8: oklch(34% 0.006 258);
+  --gray-9: oklch(15% 0.004 258);
+
+  --bg-surface:        var(--white);
+  --bg-surface-raised: var(--white);
+  --bg-overlay:        var(--gray-2);
+  --bg-inverse:        var(--black);
+
+  --text-inverse:    var(--white);
+  --text-on-inverse: var(--black);
+
+  --accent-fg:      var(--black);
+  --accent-bg:      var(--black);
+  --accent-text-on: var(--white);
+
+  /* Status hues used as text must be re-authored for the light surface. */
+  --status-success: #17613c;
+  --status-caution: #805500;
+  --status-info: #315d8a;
+
+  --shadow-color: 258 20% 60%;
+  --shadow-1: 0 1px 2px hsl(var(--shadow-color) / 0.16);
+  --shadow-2: 0 8px 24px hsl(var(--shadow-color) / 0.18);
+}
+
+body {
+  font-family: var(--sans);
+  color: var(--stone);
+  font-size: clamp(15.5px, 1.6vw, 17px);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* ─────────────────────────────────────────────
+   3. TYPOGRAPHY UTILITIES
+   ───────────────────────────────────────────── */
+
+.eyebrow {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-bottom: clamp(16px, 2.5vw, 22px);
+}
+
+.hero-heading {
+  font-family: var(--serif);
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.2;
+  color: var(--stone);
+  margin-bottom: clamp(14px, 2vw, 20px);
+}
+
+.hero-body {
+  font-size: clamp(15px, 1.7vw, 17px);
+  line-height: 1.8;
+  color: #44403c;
+  max-width: 62ch;
+}
+
+
+/* ─────────────────────────────────────────────
+   4. LAYOUT UTILITIES
+   ───────────────────────────────────────────── */
+
+.divider {
+  width: 32px;
+  height: 2px;
+  background: var(--ember);
+  margin: clamp(44px, 6vw, 60px) 0 clamp(36px, 5vw, 48px);
+  border: none;
+}
+
+.divider-light {
+  width: 100%;
+  height: 1px;
+  background: var(--border);
+  margin: clamp(32px, 5vw, 44px) 0;
+  border: none;
+}
+
+
+/* ─────────────────────────────────────────────
+   5. SECTION TOGGLE (archives page)
+   ───────────────────────────────────────────── */
+
+.section-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  padding: 2px 0;
+  gap: 16px;
+}
+
+.section-header-left {
+  flex: 1;
+}
+
+.section-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.section-heading {
+  font-family: var(--serif);
+  font-size: clamp(20px, 3.5vw, 26px);
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--stone);
+  transition: color 0.15s;
+}
+
+.section-header:hover .section-heading {
+  color: var(--ember);
+}
+
+.toggle-chevron {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  color: var(--border);
+  font-size: 11px;
+  font-family: var(--mono);
+  transition: color 0.2s, transform 0.35s ease;
+  transform: rotate(0deg);
+}
+
+.section-header:hover .toggle-chevron {
+  color: var(--ember);
+}
+
+.section-header.collapsed .toggle-chevron {
+  transform: rotate(-90deg);
+  color: var(--stone);
+}
+
+.section-body {
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.3s ease;
+  max-height: 9999px;
+  opacity: 1;
+}
+
+.section-body.collapsed {
+  max-height: 0 !important;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.section-desc {
+  font-size: clamp(13.5px, 1.5vw, 15px);
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 8px 0 clamp(20px, 3vw, 28px);
+  max-width: 58ch;
+}
+
+
+/* ─────────────────────────────────────────────
+   6. ENTRY LIST + BASE ENTRY ROW
+   ───────────────────────────────────────────── */
+
+.entry-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.entry-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: white;
+  padding: clamp(14px, 2.5vw, 20px) clamp(16px, 3vw, 24px);
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.entry-row:hover {
+  background: var(--ember-bg);
+}
+
+.entry-row-left {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.entry-title {
+  font-family: var(--serif);
+  font-size: clamp(15px, 2vw, 17px);
+  font-weight: 400;
+  color: var(--stone);
+  line-height: 1.3;
+}
+
+.entry-row:hover .entry-title {
+  color: var(--ember);
+}
+
+.entry-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.entry-date {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.3px;
+}
+
+.entry-tag {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #c4b5b0;
+}
+
+.entry-desc {
+  font-size: 12px;
+  color: var(--muted);
+  font-style: italic;
+  line-height: 1.5;
+  margin-top: 3px;
+}
+
+.entry-arrow {
+  font-size: 14px;
+  color: var(--border);
+  transition: color 0.15s, transform 0.15s;
+}
+
+.entry-row:hover .entry-arrow {
+  color: var(--ember);
+  transform: translateX(3px);
+}
+
+
+/* ─────────────────────────────────────────────
+   7. ENTRY ROW VARIANTS
+   Visual registers — each variant signals a content type.
+   ───────────────────────────────────────────── */
+
+/* Record — clean, archival */
+.entry-row.record { background: #fafaf9; }
+.entry-row.record:hover { background: #f5f4f3; }
+
+/* Journal — warm ember tint */
+.entry-row.journal { background: var(--ember-bg); }
+.entry-row.journal:hover { background: #f7ede6; }
+
+/* Architecture — cool sage */
+.entry-row.architecture { background: #f9faf9; }
+.entry-row.architecture:hover { background: #f0f4f0; }
+
+/* Case study — golden warm */
+.entry-row.case-study {
+  background: #fef9ee;
+  border-top: 1px solid #e8d5a3;
+  border-bottom: 1px solid #e8d5a3;
+}
+.entry-row.case-study:hover { background: #fdf0d0; }
+.entry-row.case-study .entry-title { color: var(--stone); }
+.entry-row.case-study:hover .entry-title { color: #92660a; }
+.entry-row.case-study .entry-tag { color: #c4a862; }
+.entry-row.case-study .entry-arrow { color: #e8d5a3; }
+.entry-row.case-study:hover .entry-arrow { color: #92660a; transform: translateX(3px); }
+
+/* Memoir — aged paper */
+.entry-row.memoir-entry {
+  background: #f0e8d8;
+  border-top: 1px solid #ddd0b8;
+  border-bottom: 1px solid #ddd0b8;
+  padding: clamp(18px, 3vw, 26px) clamp(16px, 3vw, 24px);
+}
+.entry-row.memoir-entry:hover { background: #e8deca; }
+.entry-row.memoir-entry .entry-title { font-family: var(--serif); font-size: clamp(15px,2vw,17px); font-weight: 400; color: #2a2218; line-height: 1.3; }
+.entry-row.memoir-entry:hover .entry-title { color: var(--ember); }
+.entry-row.memoir-entry .entry-date { font-family: var(--mono); font-size: 11px; color: #7a6e60; }
+.entry-row.memoir-entry .entry-tag { color: #9a8878; }
+.entry-row.memoir-entry .entry-desc { font-size: 12px; color: #4a4035; font-style: italic; line-height: 1.5; margin-top: 4px; }
+.entry-row.memoir-entry .entry-arrow { color: #c8b898; }
+.entry-row.memoir-entry:hover .entry-arrow { color: var(--ember); transform: translateX(3px); }
+
+/* Walk — ember left border, live testimony */
+.entry-row.walk-entry {
+  background: white;
+  border-left: 2px solid var(--ember);
+  border-top: 1px solid var(--ember-bg);
+  border-bottom: 1px solid var(--border);
+  padding: clamp(14px, 2.5vw, 20px) clamp(16px, 3vw, 24px);
+}
+.entry-row.walk-entry:hover { background: var(--ember-bg); }
+.entry-row.walk-entry .entry-title { font-family: var(--serif); color: var(--ember); font-size: clamp(15px,2vw,17px); font-weight: 400; line-height: 1.3; }
+.entry-row.walk-entry:hover .entry-title { color: #8a3820; }
+.entry-row.walk-entry .entry-date { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.entry-row.walk-entry .entry-tag { color: #c4a090; }
+.entry-row.walk-entry .entry-desc { font-size: 12px; color: var(--muted); font-style: italic; line-height: 1.55; margin-top: 4px; }
+.entry-row.walk-entry .entry-arrow { color: var(--border); }
+.entry-row.walk-entry:hover .entry-arrow { color: var(--ember); transform: translateX(3px); }
+
+/* God Pattern — ember left border, recognition arriving into light */
+.entry-row.god-pattern-entry {
+  background: #fffcfa;
+  border-left: 2px solid var(--ember);
+  border-top: 1px solid #f5ede8;
+  border-bottom: 1px solid var(--border);
+  padding: clamp(14px, 2.5vw, 20px) clamp(16px, 3vw, 24px);
+}
+.entry-row.god-pattern-entry:hover { background: var(--ember-bg); }
+.entry-row.god-pattern-entry .entry-title { font-family: var(--serif); font-size: clamp(15px,2vw,17px); font-weight: 400; color: var(--ember); line-height: 1.3; }
+.entry-row.god-pattern-entry:hover .entry-title { color: #8a3820; }
+.entry-row.god-pattern-entry .entry-date { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.entry-row.god-pattern-entry .entry-tag { color: #c4a090; }
+.entry-row.god-pattern-entry .entry-desc { font-size: 12px; color: #78716c; font-style: italic; line-height: 1.55; margin-top: 4px; }
+.entry-row.god-pattern-entry .entry-arrow { color: var(--border); }
+.entry-row.god-pattern-entry:hover .entry-arrow { color: var(--ember); transform: translateX(3px); }
+
+/* Firmament — dark, gold text, The Dome register */
+.entry-row.firmament-entry {
+  background: #0c0a08;
+  border-top: 1px solid #2a2420;
+  border-bottom: 1px solid #2a2420;
+}
+.entry-row.firmament-entry:hover { background: #130f0c; }
+.entry-row.firmament-entry .entry-title { color: #c8b870; font-style: italic; }
+.entry-row.firmament-entry:hover .entry-title { color: #ddd088; }
+.entry-row.firmament-entry .entry-date { color: #3a3530; }
+.entry-row.firmament-entry .entry-tag { color: #4a4238; }
+.entry-row.firmament-entry .entry-desc { font-size: 12px; color: #4a4038; font-style: italic; line-height: 1.5; margin-top: 4px; }
+.entry-row.firmament-entry .entry-arrow { color: #3a3228; }
+.entry-row.firmament-entry:hover .entry-arrow { color: #c8b870; transform: translateX(3px); }
+
+/* Cheat Sheet — dark warning register */
+.entry-row.cheatsheet-entry {
+  background: #0d0b09;
+  border-top: 1px solid #2a2018;
+  border-bottom: 1px solid #2a2018;
+  padding: clamp(14px, 2.5vw, 20px) clamp(16px, 3vw, 24px);
+}
+.entry-row.cheatsheet-entry:hover { background: #141008; }
+.entry-row.cheatsheet-entry .entry-title { color: #c8a870; font-style: normal; }
+.entry-row.cheatsheet-entry:hover .entry-title { color: #ddc088; }
+.entry-row.cheatsheet-entry .entry-date { color: #3a3020; }
+.entry-row.cheatsheet-entry .entry-tag { color: #3a3020; }
+.entry-row.cheatsheet-entry .entry-desc { font-size: 12px; color: #5a4e38; font-style: italic; line-height: 1.5; margin-top: 4px; }
+.entry-row.cheatsheet-entry .entry-arrow { color: #2a2018; }
+.entry-row.cheatsheet-entry:hover .entry-arrow { color: #c8a870; transform: translateX(3px); }
+
+/* Embodiment — cream, Cormorant Garamond */
+.entry-row.embodiment-entry {
+  background: #f5f0e8;
+  border-top: 1px solid #e8e0d0;
+  border-bottom: 1px solid #e8e0d0;
+  padding: clamp(18px, 3vw, 26px) clamp(16px, 3vw, 24px);
+}
+.entry-row.embodiment-entry:hover { background: #ede5d8; }
+.entry-row.embodiment-entry .entry-title { font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(17px,2.5vw,20px); font-weight: 300; font-style: italic; color: #1a1612; line-height: 1.2; }
+.entry-row.embodiment-entry:hover .entry-title { color: #6b2737; }
+.entry-row.embodiment-entry .entry-date { font-family: "DM Mono", monospace; color: #8a7f72; }
+.entry-row.embodiment-entry .entry-tag { color: #8a7f72; }
+.entry-row.embodiment-entry .entry-desc { font-family: "Cormorant Garamond", Georgia, serif; font-size: 14px; font-weight: 300; color: #8a7f72; font-style: italic; line-height: 1.6; margin-top: 5px; }
+.entry-row.embodiment-entry .entry-arrow { color: #c9a84c; }
+.entry-row.embodiment-entry:hover .entry-arrow { color: #6b2737; transform: translateX(3px); }
+
+/* Island — muted sage green, personal grief */
+.entry-row.island-entry {
+  background: #f0f4f1;
+  border-top: 1px solid #c8d4cc;
+  border-bottom: 1px solid #c8d4cc;
+  padding: clamp(18px, 3vw, 26px) clamp(16px, 3vw, 24px);
+}
+.entry-row.island-entry:hover { background: #e4ede7; }
+.entry-row.island-entry .entry-title { font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(15px,2vw,17px); font-weight: 400; font-style: italic; color: #2d4a3e; line-height: 1.3; }
+.entry-row.island-entry:hover .entry-title { color: #1a2e26; }
+.entry-row.island-entry .entry-date { font-family: "DM Mono", monospace; font-size: 11px; color: #7a8c82; }
+.entry-row.island-entry .entry-tag { color: #7a8c82; }
+.entry-row.island-entry .entry-desc { font-size: 12px; font-style: italic; color: #5a6e62; line-height: 1.55; margin-top: 4px; }
+.entry-row.island-entry .entry-arrow { color: #c4b89a; }
+.entry-row.island-entry:hover .entry-arrow { color: #2d4a3e; transform: translateX(3px); }
+
+/* I Was Here — near-black, aged text */
+.entry-row.i-was-here-entry {
+  background: #111111;
+  border-top: 1px solid #2a2420;
+  border-bottom: 1px solid #2a2420;
+  padding: clamp(18px, 3vw, 26px) clamp(16px, 3vw, 24px);
+}
+.entry-row.i-was-here-entry:hover { background: #1a1714; }
+.entry-row.i-was-here-entry .entry-title { font-family: "Newsreader", Georgia, serif; font-size: clamp(15px,2vw,17px); font-weight: 300; font-style: italic; color: #d4cfc8; line-height: 1.3; }
+.entry-row.i-was-here-entry:hover .entry-title { color: #e8e3dc; }
+.entry-row.i-was-here-entry .entry-date { font-family: "Martian Mono", "IBM Plex Mono", monospace; font-size: 11px; color: #3a3530; }
+.entry-row.i-was-here-entry .entry-tag { color: #3a3530; }
+.entry-row.i-was-here-entry .entry-desc { font-size: 12px; font-style: italic; color: #6a6560; line-height: 1.55; margin-top: 4px; }
+.entry-row.i-was-here-entry .entry-arrow { color: #2a2420; }
+.entry-row.i-was-here-entry:hover .entry-arrow { color: var(--ember); transform: translateX(3px); }
+
+
+/* ─────────────────────────────────────────────
+   8. PILLS
+   Small inline labels for cross-arc membership,
+   content flags, and status.
+   ───────────────────────────────────────────── */
+
+/* Shared pill base */
+[class^="pill-"],
+[class*=" pill-"] {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 2px 8px;
+  font-family: var(--mono);
+}
+
+.pill-dream    { color: #4a7fa5; background: #daeaf7; border: 1px solid #b8cce0; }
+.pill-nested   { color: #92660a; background: #fef9ee; border: 1px solid #e8d5a3; font-family: var(--mono); }
+.pill-dome     { color: #9a8a50; background: #1a1610; border: 1px solid #3a3220; }
+.pill-god      { color: #ffffff; background: var(--ember); border: 1px solid #8a3820; }
+.pill-resolved { color: #1c1917; background: #e8e0d4; border: 1px solid #c4b8a8; }
+.pill-living   { color: #c8a870; background: #1a1410; border: 1px solid #3a2e1a; }
+.pill-door     { color: #7a3a42; background: #f2e4e6; border: 1px solid #d9b8bc; }
+
+
+/* ─────────────────────────────────────────────
+   9. SOURCE LINK
+   ───────────────────────────────────────────── */
+
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin-bottom: clamp(20px, 3vw, 28px);
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.source-link:hover {
+  background: var(--ember-bg);
+  border-color: var(--ember);
+}
+
+.source-link-dot {
+  width: 6px;
+  height: 6px;
+  min-width: 6px;
+  border-radius: 50%;
+  background: var(--ember);
+}
+
+.source-link-text {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.3px;
+}
+
+.source-link:hover .source-link-text {
+  color: var(--ember);
+}

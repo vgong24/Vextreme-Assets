@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/374c6c52ce838c05f035564add3e265b3be1a21fcfcfec4184abebd399a4589f.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/bb8f3c3b0ca40380ad4763e58e8c82cb289a9647e74514948c730e6a16b6cabb.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/75407d22188550d679e0d74a9227548b882fe282d70e71e424f1fcd3aeade3a6.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/__assets/705776b6237d1fd4dec3d53fe261487c9f0a8c89a62ca1be9d1ff1ce40431e9e.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/7b56c437cef01b08e844a495333cb1473be2158ffad27400fcfd6c939b900c14.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/c8f8c7f5ed539bb424ee0c70890bb008b98bfbdd6646907be32df4dd6c439a9b.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/26bad053b5abef0e195b4d7c7db99fca0b6d32d94775a533bbbe1eb424e8108e.ttf") format("truetype");
+}

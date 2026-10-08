@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/b95b576b0912b261b6f1e955c72ad6d060516aa0a537f13244c3fff4cef01193.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/6d83b1a12212ea9e5ba8de1265079d8fbf457750a6454dd527e85814b5697d41.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/7b56c437cef01b08e844a495333cb1473be2158ffad27400fcfd6c939b900c14.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/c8f8c7f5ed539bb424ee0c70890bb008b98bfbdd6646907be32df4dd6c439a9b.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/26bad053b5abef0e195b4d7c7db99fca0b6d32d94775a533bbbe1eb424e8108e.ttf") format("truetype");
+}

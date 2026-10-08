@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/5c592cba534d3294792f7c97849bb5407c40ee9a90492b9d34ebfa3a9f45a45a.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/__assets/06156eb6e366d18d18f8b5ad1f7b7d6f2559246fe5911a3ce1279379b5338d84.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/b1918663f099da1fe7502f1459c275483378f5de4505e6fc9dba419931092f61.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/374c6c52ce838c05f035564add3e265b3be1a21fcfcfec4184abebd399a4589f.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/911bf559d287436e5fd68ad1d4e6d25e66fb86d20747d97d5e8b25ad8efc235c.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/bb8f3c3b0ca40380ad4763e58e8c82cb289a9647e74514948c730e6a16b6cabb.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/__assets/705776b6237d1fd4dec3d53fe261487c9f0a8c89a62ca1be9d1ff1ce40431e9e.ttf") format("truetype");
+}
+@font-face {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/0fb425c58bfeabd618cd81030d14f88a4971e54ba0a2cf2b18b5315f5cd1bf1c.ttf") format("truetype");
+}
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/09ea70d82d0ff88a25b2b094c23109790e79a8d13e3bacc2110fe8f9e268761d.ttf") format("truetype");
+}

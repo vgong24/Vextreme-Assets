@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/b1918663f099da1fe7502f1459c275483378f5de4505e6fc9dba419931092f61.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/374c6c52ce838c05f035564add3e265b3be1a21fcfcfec4184abebd399a4589f.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/911bf559d287436e5fd68ad1d4e6d25e66fb86d20747d97d5e8b25ad8efc235c.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/bb8f3c3b0ca40380ad4763e58e8c82cb289a9647e74514948c730e6a16b6cabb.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/__assets/705776b6237d1fd4dec3d53fe261487c9f0a8c89a62ca1be9d1ff1ce40431e9e.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/ee9558be9f8a4d750ce42b6f6306687b5e535a575e9dc00323674539c17f090c.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/a699af1dea30b799318e058c03ae61680de787476d635909fbb0354740971bab.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/e45972c7e9f24dc390848eb598daf023bc4e4284384ba7bb6696dc53c9e90a67.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/6d83b1a12212ea9e5ba8de1265079d8fbf457750a6454dd527e85814b5697d41.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/655ecee898b68ff3ce8c84444ed22c2f1f62bdfda9bf2f89b2b912e6319c8693.ttf") format("truetype");
+}

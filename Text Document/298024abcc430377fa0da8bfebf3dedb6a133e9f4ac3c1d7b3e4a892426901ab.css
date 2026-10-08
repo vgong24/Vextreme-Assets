@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Martian Mono";
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/__assets/be15feda5d8df066056f15f4ddf4803e79d4e083672534e20edcb19d287756ec.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Martian Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/__assets/1f18ca0a698e484b3764fee7fea580d04aa536e803911c641b3da7b9eb9278e5.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/463b9785306ce85ececcb055dc0bbf8046e1d457e07901ade5c1b9196009b7d5.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/289d2aa8e0ed6731529209b3144c1db2c7144f263e49de695ff80b364f3f9f32.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/dfe936d7a3e5c58fb24b2756df049d10b25cbfa219b3f2d47bf93858651f8c88.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/d6c65600eb0149bc0e2d25af57290a05b310141d46a5516edec93d0afcb5c7c0.ttf") format("truetype");
+}

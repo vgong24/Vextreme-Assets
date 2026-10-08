@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/b0c618f6d8ea996806c20d04c7348f3f7c8501de55022e499078cca66d400d89.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/__assets/a3a74cc1b1d04368589281d97dd87b2dbb58ee33499b631f892bf3b3863ffbbe.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/__assets/1a9cad03d35e9bb1bd76391e89761301ae10f54746183ed7781d43c40643558c.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/__assets/b9122df809d9d9205c4b0a16966e24f0b56b30e6999106006bf160f2b0c849e5.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/__assets/8da5dfcdccfbe404eace2e760de464ab617a4c580b76159f16d61eb357af6756.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/e06a2095f8b63e67f476bea7ff4487f65211460dd077f50a9875dd5532209c8e.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/9173aaefd94ab3d8a948299cf02cd25f4e40c6204789a701a375b0de2911f231.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/121e45e04c84ac161b65ea81bde7657992bb4ad52214d6ed04f06ddab4dd101c.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/d333e3ae071a129559793d042fd7bdcab817dc43ab2c3a59bf6e26346116ce30.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/__assets/893720542ca9975e81c9d647e7d30fc1384b38d75a0eb789507032332c24de51.ttf") format("truetype");
+}

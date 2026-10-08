@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/86b5709fc72608e5a5babe0ed8a36e20b645f07bb8f3ae848ceaf35479df75bc.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/0569c822cab6c5100c1d78c248ab3ca2033029492582839fce5cdcfa6d8ed45f.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/9bd8ba39c9d55e06580a5a593e8774cc8a2613e89db3fa59f1217f759847cee3.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/7e0a56187ecaff85f3d03602981a2bf7bedc58b5dca3990ebce57c75c8ccdb18.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/c1e7453ea26a1d1eea2618b929d9a5f7be19492a0179cde7c3b69b460cb4cb28.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Martian Mono";
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/__assets/be15feda5d8df066056f15f4ddf4803e79d4e083672534e20edcb19d287756ec.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Martian Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/__assets/1f18ca0a698e484b3764fee7fea580d04aa536e803911c641b3da7b9eb9278e5.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Martian Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/__assets/eecfda1d899e9ebb4fb74ab810e233e1e0859915e93ea3fd389049f93e9bc76e.ttf") format("truetype");
+}

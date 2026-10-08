@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/75f24b1771ed59f0d7f44d445ca5b7abccf8bae26a7b1f4b9ed5807e8746054f.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/028867e95979b178b5eb0979c475ff6ef6dae825520e66c5df716772e2a58ef4.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/34ae811a8416be844efd8ec13cc4a4b6f814e677e36e510a2d4187feaa8c3807.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/738d3a64ab97b455d91bd5d71d303887c2b43c5180660ef218e37c275678c2fd.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/b95b576b0912b261b6f1e955c72ad6d060516aa0a537f13244c3fff4cef01193.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/6d83b1a12212ea9e5ba8de1265079d8fbf457750a6454dd527e85814b5697d41.ttf") format("truetype");
+}

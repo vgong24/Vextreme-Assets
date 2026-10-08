@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__assets/aab63435a01a8dd21eeb7818bc2de71ed4d355472272bbaf18a8e62564da47ee.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/0dfc29fde7d95ca65fe2a51c3649883a423d0d3fd86bfe63e2a35e38a0a995b5.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__assets/56632cca6632f379925bba8326ffd04478b42d23ec4f5c22d194c9a440c93eae.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/__assets/d03f1389be8c7cea7e4f4546b5715c72a75444a877838be6f0a2dc347c1c840d.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__assets/4664a706f8240435a7e054d1b3de80863b93420babd49f20e9f34ffff314d0a4.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/__assets/c7e8ebe771b6b255589cc97d5a50bd556cc21fd2b932b1c8455652f4be315609.ttf") format("truetype");
+}
