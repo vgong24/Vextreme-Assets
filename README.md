@@ -14,6 +14,41 @@ The original batch layout remains recoverable in Git history at `cd2b60424c4bb44
 
 Vextreme may change the public asset **origin**, but the content-style asset filename should remain stable.
 
+## Derived screenshot evidence
+
+`__assets/` is reserved for preserved source/import dependencies. Browser screenshots are generated verification evidence and intentionally use a separate namespace:
+
+```text
+evidence/screenshots/<namespace>/<slug>/<locale>/<theme>/<viewport>/<sha256>.png
+evidence/screenshots/manifest.json
+```
+
+The semantic path answers what the capture represents; the final SHA-256 filename preserves immutable byte identity. The manifest binds each current semantic coordinate to the exact source repository, source commit, source page, and capture kind. Re-capturing the same coordinate replaces only the current-tree pointer/file; Git history retains the prior evidence.
+
+This separation is deliberate:
+
+```text
+__assets/              = preserved authored/source dependencies
+evidence/screenshots/  = derived browser/localization evidence
+```
+
+Ingest or validate screenshot evidence with:
+
+```bash
+node scripts/ingest-screenshot-evidence.mjs \
+  --file /path/to/capture.png \
+  --namespace vextreme \
+  --slug claude-answers-the-doubt \
+  --locale ja \
+  --theme default \
+  --viewport 1280 \
+  --source-repo vgong24/Vextreme \
+  --source-commit <40-hex-commit>
+
+node scripts/ingest-screenshot-evidence.mjs --check
+```
+
+The ingest tool copies PNG bytes unchanged, computes SHA-256, refuses non-PNG or unsafe coordinates, and validates that every current evidence PNG is manifest-owned.
 
 ## Pages delivery projection
 

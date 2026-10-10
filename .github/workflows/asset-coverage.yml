@@ -16,6 +16,30 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Validate screenshot evidence custody
+        run: node scripts/ingest-screenshot-evidence.mjs --check
+
+      - name: Smoke-test screenshot evidence ingest
+        shell: bash
+        run: |
+          set -euo pipefail
+          root="${RUNNER_TEMP}/evidence-smoke"
+          mkdir -p "${root}"
+          printf '%s' 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Y9Z4J0AAAAASUVORK5CYII=' | base64 -d > "${root}/capture.png"
+          node scripts/ingest-screenshot-evidence.mjs \
+            --root "${root}" \
+            --file "${root}/capture.png" \
+            --namespace vextreme \
+            --slug smoke-page \
+            --locale en \
+            --theme default \
+            --viewport 1280 \
+            --source-repo vgong24/Vextreme \
+            --source-commit 0000000000000000000000000000000000000000 \
+            --source-path pages/smoke-page.html
+          node scripts/ingest-screenshot-evidence.mjs --root "${root}" --check
+          test "$(find "${root}/evidence/screenshots" -name '*.png' | wc -l)" -eq 1
+
       - name: Checkout Vextreme
         uses: actions/checkout@v4
         with:
