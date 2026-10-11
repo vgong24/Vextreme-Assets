@@ -32,6 +32,276 @@
       },
       "captureKind": "localization"
     },
+    "vextreme/vex-support/en/foundation-light/1440": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "en",
+      "theme": "foundation-light",
+      "viewport": 1440,
+      "sha256": "4074fa9fd2ad1272833a82a941f8080ac1658e26cea7f53732130d46eab323f7",
+      "path": "evidence/screenshots/vextreme/vex-support/en/foundation-light/1440/4074fa9fd2ad1272833a82a941f8080ac1658e26cea7f53732130d46eab323f7.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/en/foundation-light/320": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "en",
+      "theme": "foundation-light",
+      "viewport": 320,
+      "sha256": "3a526e53e873c7e50897ac3370b0e4df44df60114ea7efebf6ac129022c0f5b7",
+      "path": "evidence/screenshots/vextreme/vex-support/en/foundation-light/320/3a526e53e873c7e50897ac3370b0e4df44df60114ea7efebf6ac129022c0f5b7.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/en/foundation-light/768": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "en",
+      "theme": "foundation-light",
+      "viewport": 768,
+      "sha256": "0bfc5cb09ef72b0dafbb2b2908b823324d2c979d4315e7637cc66d8d72a1ac4a",
+      "path": "evidence/screenshots/vextreme/vex-support/en/foundation-light/768/0bfc5cb09ef72b0dafbb2b2908b823324d2c979d4315e7637cc66d8d72a1ac4a.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/en/foundation/1440": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "en",
+      "theme": "foundation",
+      "viewport": 1440,
+      "sha256": "b0c3c6a4c47ff8b78ad2309b475093f3f2efc6d2b743022914d51092f0d42912",
+      "path": "evidence/screenshots/vextreme/vex-support/en/foundation/1440/b0c3c6a4c47ff8b78ad2309b475093f3f2efc6d2b743022914d51092f0d42912.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/en/foundation/320": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "en",
+      "theme": "foundation",
+      "viewport": 320,
+      "sha256": "e63cc143fea02d214b1914ddcb8ad25627334c102ab512d3632a0ae1567a517f",
+      "path": "evidence/screenshots/vextreme/vex-support/en/foundation/320/e63cc143fea02d214b1914ddcb8ad25627334c102ab512d3632a0ae1567a517f.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/en/foundation/768": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "en",
+      "theme": "foundation",
+      "viewport": 768,
+      "sha256": "afd47058b81d0b836dcc657b07972c9d6bddb5eca1233af0f93f04f203457bc3",
+      "path": "evidence/screenshots/vextreme/vex-support/en/foundation/768/afd47058b81d0b836dcc657b07972c9d6bddb5eca1233af0f93f04f203457bc3.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/ja/foundation-light/1440": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "ja",
+      "theme": "foundation-light",
+      "viewport": 1440,
+      "sha256": "5ef093b4b98c1ce2e4cc5b75be565be127e176c02518101c4b304ddfb25247ff",
+      "path": "evidence/screenshots/vextreme/vex-support/ja/foundation-light/1440/5ef093b4b98c1ce2e4cc5b75be565be127e176c02518101c4b304ddfb25247ff.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/ja/foundation-light/320": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "ja",
+      "theme": "foundation-light",
+      "viewport": 320,
+      "sha256": "38d15b8392c523ced0709ef4f2924b526993c4285eb5013de18d85d400f94108",
+      "path": "evidence/screenshots/vextreme/vex-support/ja/foundation-light/320/38d15b8392c523ced0709ef4f2924b526993c4285eb5013de18d85d400f94108.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/ja/foundation-light/768": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "ja",
+      "theme": "foundation-light",
+      "viewport": 768,
+      "sha256": "74ac90481b1e61f0f224d9182aed662adee79d0f9dabe5aefb5ef0719ec5faaa",
+      "path": "evidence/screenshots/vextreme/vex-support/ja/foundation-light/768/74ac90481b1e61f0f224d9182aed662adee79d0f9dabe5aefb5ef0719ec5faaa.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/ja/foundation/1440": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "ja",
+      "theme": "foundation",
+      "viewport": 1440,
+      "sha256": "891dcdc188b46a89602dbf7a827e22183c590bb7a5df5795dfdd2d9ffa44aa1d",
+      "path": "evidence/screenshots/vextreme/vex-support/ja/foundation/1440/891dcdc188b46a89602dbf7a827e22183c590bb7a5df5795dfdd2d9ffa44aa1d.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/ja/foundation/320": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "ja",
+      "theme": "foundation",
+      "viewport": 320,
+      "sha256": "f354e769b949ada2f1f146886e0014dd64fb583bbdde4ad76761046dc1cc0eb9",
+      "path": "evidence/screenshots/vextreme/vex-support/ja/foundation/320/f354e769b949ada2f1f146886e0014dd64fb583bbdde4ad76761046dc1cc0eb9.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/ja/foundation/768": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "ja",
+      "theme": "foundation",
+      "viewport": 768,
+      "sha256": "9c1a4372decdf8e91c71d5da06327c708f7e8ddcecfc63761f4a8543b4bad884",
+      "path": "evidence/screenshots/vextreme/vex-support/ja/foundation/768/9c1a4372decdf8e91c71d5da06327c708f7e8ddcecfc63761f4a8543b4bad884.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/zh/foundation-light/1440": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "zh",
+      "theme": "foundation-light",
+      "viewport": 1440,
+      "sha256": "4c0cd7bdda0774f06f3c046839effc4be511c2b30d6555abad6d5b256aff8792",
+      "path": "evidence/screenshots/vextreme/vex-support/zh/foundation-light/1440/4c0cd7bdda0774f06f3c046839effc4be511c2b30d6555abad6d5b256aff8792.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/zh/foundation-light/320": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "zh",
+      "theme": "foundation-light",
+      "viewport": 320,
+      "sha256": "0cb8f97708559c99089e882ef9bb900bd471a5e52206bc80afc6e81610ab2e28",
+      "path": "evidence/screenshots/vextreme/vex-support/zh/foundation-light/320/0cb8f97708559c99089e882ef9bb900bd471a5e52206bc80afc6e81610ab2e28.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/zh/foundation-light/768": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "zh",
+      "theme": "foundation-light",
+      "viewport": 768,
+      "sha256": "797ec6d95fe7b798f84de642196826179737ec08d3f45730b7da6a93bd45a3f0",
+      "path": "evidence/screenshots/vextreme/vex-support/zh/foundation-light/768/797ec6d95fe7b798f84de642196826179737ec08d3f45730b7da6a93bd45a3f0.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/zh/foundation/1440": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "zh",
+      "theme": "foundation",
+      "viewport": 1440,
+      "sha256": "e6a3df6f232ab177dcd89e7c196fc571cdf77104f18924fe5e7eb655a4cd2aee",
+      "path": "evidence/screenshots/vextreme/vex-support/zh/foundation/1440/e6a3df6f232ab177dcd89e7c196fc571cdf77104f18924fe5e7eb655a4cd2aee.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/zh/foundation/320": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "zh",
+      "theme": "foundation",
+      "viewport": 320,
+      "sha256": "16e039353c17412d3f311bf49cb0f1f6e953ad10d1d6b4b22dc354f80957a963",
+      "path": "evidence/screenshots/vextreme/vex-support/zh/foundation/320/16e039353c17412d3f311bf49cb0f1f6e953ad10d1d6b4b22dc354f80957a963.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vex-support/zh/foundation/768": {
+      "namespace": "vextreme",
+      "slug": "vex-support",
+      "locale": "zh",
+      "theme": "foundation",
+      "viewport": 768,
+      "sha256": "0db9f4812d06b8a76d645125edb1adfd6f00c22ef9ba8f92d175376e14f4f0c3",
+      "path": "evidence/screenshots/vextreme/vex-support/zh/foundation/768/0db9f4812d06b8a76d645125edb1adfd6f00c22ef9ba8f92d175376e14f4f0c3.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vex-support.html"
+      },
+      "captureKind": "institutional-localization"
+    },
     "vextreme/vextreme-home/en/foundation-light/1440": {
       "namespace": "vextreme",
       "slug": "vextreme-home",
