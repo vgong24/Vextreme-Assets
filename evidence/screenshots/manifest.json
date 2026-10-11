@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "vextreme-assets.screenshot-evidence/v1",
+  "repository": "vgong24/Vextreme-Assets",
+  "records": {
+    "vextreme/specimen-full-translation/en/default/1280": {
+      "namespace": "vextreme",
+      "slug": "specimen-full-translation",
+      "locale": "en",
+      "theme": "default",
+      "viewport": 1280,
+      "sha256": "df0d2d03185d6ecf0e1c1159c1bfd199bf2ed06c8349abf1624b72430ba15698",
+      "path": "evidence/screenshots/vextreme/specimen-full-translation/en/default/1280/df0d2d03185d6ecf0e1c1159c1bfd199bf2ed06c8349abf1624b72430ba15698.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "0b9a42494200d6023cc8d92a675627580605d38e",
+        "path": "pages/specimen-full-translation.html"
+      },
+      "captureKind": "localization"
+    },
+    "vextreme/specimen-full-translation/ja/default/1280": {
+      "namespace": "vextreme",
+      "slug": "specimen-full-translation",
+      "locale": "ja",
+      "theme": "default",
+      "viewport": 1280,
+      "sha256": "8e92c59b362cee566cc7d7f17acc435aebec4023d7e4daceb499105b2f105a35",
+      "path": "evidence/screenshots/vextreme/specimen-full-translation/ja/default/1280/8e92c59b362cee566cc7d7f17acc435aebec4023d7e4daceb499105b2f105a35.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "0b9a42494200d6023cc8d92a675627580605d38e",
+        "path": "pages/specimen-full-translation.html"
+      },
+      "captureKind": "localization"
+    }
+  }
+}
