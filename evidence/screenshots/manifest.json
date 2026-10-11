@@ -17,6 +17,21 @@
       },
       "captureKind": "localization"
     },
+    "vextreme/specimen-full-translation/fr/default/1280": {
+      "namespace": "vextreme",
+      "slug": "specimen-full-translation",
+      "locale": "fr",
+      "theme": "default",
+      "viewport": 1280,
+      "sha256": "d2a2953d3aac9febaa2416ff39cdf3219a8684c29108aeace5a38a90d4c3a33e",
+      "path": "evidence/screenshots/vextreme/specimen-full-translation/fr/default/1280/d2a2953d3aac9febaa2416ff39cdf3219a8684c29108aeace5a38a90d4c3a33e.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "103fc7995f80c3dd41b5fa096b822fa40f71d98f",
+        "path": "pages/specimen-full-translation.html"
+      },
+      "captureKind": "localization"
+    },
     "vextreme/specimen-full-translation/ja/default/1280": {
       "namespace": "vextreme",
       "slug": "specimen-full-translation",
@@ -29,6 +44,21 @@
         "repository": "vgong24/Vextreme",
         "commit": "0b9a42494200d6023cc8d92a675627580605d38e",
         "path": "pages/specimen-full-translation.html"
+      },
+      "captureKind": "localization"
+    },
+    "vextreme/specimens/fr/default/1280": {
+      "namespace": "vextreme",
+      "slug": "specimens",
+      "locale": "fr",
+      "theme": "default",
+      "viewport": 1280,
+      "sha256": "b5420ffdfc0d4e8ce1f2747ca9ce727ab824dee73fd0d8aed35373037e0b5a66",
+      "path": "evidence/screenshots/vextreme/specimens/fr/default/1280/b5420ffdfc0d4e8ce1f2747ca9ce727ab824dee73fd0d8aed35373037e0b5a66.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "103fc7995f80c3dd41b5fa096b822fa40f71d98f",
+        "path": "pages/specimens.html"
       },
       "captureKind": "localization"
     },
