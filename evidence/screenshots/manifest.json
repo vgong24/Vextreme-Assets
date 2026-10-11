@@ -211,6 +211,51 @@
         "path": "pages/vextreme-home.html"
       },
       "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/zh/foundation/1440": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "zh",
+      "theme": "foundation",
+      "viewport": 1440,
+      "sha256": "a119fc74ff04b5a75249cbc0f970383dbf4b529f984be21f1979b28d5e3f95c9",
+      "path": "evidence/screenshots/vextreme/vextreme-home/zh/foundation/1440/a119fc74ff04b5a75249cbc0f970383dbf4b529f984be21f1979b28d5e3f95c9.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/zh/foundation/320": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "zh",
+      "theme": "foundation",
+      "viewport": 320,
+      "sha256": "00d9e6e5dc0ed66c9bc3a35c4e6e2c5626e324a9298e129eff8fcf0748252cf4",
+      "path": "evidence/screenshots/vextreme/vextreme-home/zh/foundation/320/00d9e6e5dc0ed66c9bc3a35c4e6e2c5626e324a9298e129eff8fcf0748252cf4.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/zh/foundation/768": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "zh",
+      "theme": "foundation",
+      "viewport": 768,
+      "sha256": "49db37da6f34d6733d7249319f4f8b906e90dea430d37849291e7b6428b85835",
+      "path": "evidence/screenshots/vextreme/vextreme-home/zh/foundation/768/49db37da6f34d6733d7249319f4f8b906e90dea430d37849291e7b6428b85835.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
     }
   }
 }
