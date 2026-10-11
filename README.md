@@ -10,7 +10,9 @@ __assets/<64-hex-id>.<extension>
 
 The initial human upload arrived in temporary type/batch folders. This repository normalizes those paths without re-encoding or re-uploading the binary payloads: the canonical files point at the same Git blob objects.
 
-The original batch layout remains recoverable in Git history at `cd2b60424c4bb4419a85009160e60d50dc574f11`. `asset-manifest.json` records each canonical path, original import path, Git blob SHA, extension, and byte size.
+The original batch layout remains recoverable in Git history at `cd2b60424c4bb4419a85009160e60d50dc574f11`. `asset-manifest.json` is the provenance map for that initial imported corpus: it records each imported canonical path, original import path, Git blob SHA, extension, and byte size.
+
+Later authored dependencies recovered from an exact external source may also enter `__assets/` directly under the same content-addressed filename contract when the accepting change records the exact source URL, byte count, SHA-256, and recovery evidence. They do not acquire a fictional historical `importPath`, and therefore do not rewrite the initial import manifest.
 
 Vextreme may change the public asset **origin**, but the content-style asset filename should remain stable.
 
