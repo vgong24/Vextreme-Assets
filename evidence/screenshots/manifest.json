@@ -31,6 +31,276 @@
         "path": "pages/specimen-full-translation.html"
       },
       "captureKind": "localization"
+    },
+    "vextreme/vextreme-home/en/foundation-light/1440": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "en",
+      "theme": "foundation-light",
+      "viewport": 1440,
+      "sha256": "45924021b0b925585128a25e64978728a97d75db65b263ed53a1754b54a4f344",
+      "path": "evidence/screenshots/vextreme/vextreme-home/en/foundation-light/1440/45924021b0b925585128a25e64978728a97d75db65b263ed53a1754b54a4f344.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/en/foundation-light/320": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "en",
+      "theme": "foundation-light",
+      "viewport": 320,
+      "sha256": "a99ec816c74f59e77dd99be07245bc6d938a358448f8e6d45ef4748cbb985a76",
+      "path": "evidence/screenshots/vextreme/vextreme-home/en/foundation-light/320/a99ec816c74f59e77dd99be07245bc6d938a358448f8e6d45ef4748cbb985a76.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/en/foundation-light/768": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "en",
+      "theme": "foundation-light",
+      "viewport": 768,
+      "sha256": "f97cb57e04440810ad0d7841151f5d5932237b655c3af4de75812378c89a09d1",
+      "path": "evidence/screenshots/vextreme/vextreme-home/en/foundation-light/768/f97cb57e04440810ad0d7841151f5d5932237b655c3af4de75812378c89a09d1.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/en/foundation/1440": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "en",
+      "theme": "foundation",
+      "viewport": 1440,
+      "sha256": "76e40ae5b173f1c6a62cf547861c97e85a355ccd19a18d3accfd0c9f6aaaa60f",
+      "path": "evidence/screenshots/vextreme/vextreme-home/en/foundation/1440/76e40ae5b173f1c6a62cf547861c97e85a355ccd19a18d3accfd0c9f6aaaa60f.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/en/foundation/320": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "en",
+      "theme": "foundation",
+      "viewport": 320,
+      "sha256": "776c71706bbcbccb69c74d19ea05c89d793d9ea67eda5e5d8967fb607dfdc783",
+      "path": "evidence/screenshots/vextreme/vextreme-home/en/foundation/320/776c71706bbcbccb69c74d19ea05c89d793d9ea67eda5e5d8967fb607dfdc783.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/en/foundation/768": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "en",
+      "theme": "foundation",
+      "viewport": 768,
+      "sha256": "12606b9ff620350d7cf9a9386cb4a32602b00a447c06db76489cb99b9b1dedba",
+      "path": "evidence/screenshots/vextreme/vextreme-home/en/foundation/768/12606b9ff620350d7cf9a9386cb4a32602b00a447c06db76489cb99b9b1dedba.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/ja/foundation-light/1440": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "ja",
+      "theme": "foundation-light",
+      "viewport": 1440,
+      "sha256": "67fdde3a989f717d08721cf95f56164dd687046857874e6d3769f1990f3d8f34",
+      "path": "evidence/screenshots/vextreme/vextreme-home/ja/foundation-light/1440/67fdde3a989f717d08721cf95f56164dd687046857874e6d3769f1990f3d8f34.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/ja/foundation-light/320": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "ja",
+      "theme": "foundation-light",
+      "viewport": 320,
+      "sha256": "acf336a25cb26d608254c610db93bf492f09d26e86a1300566de72dca0913bba",
+      "path": "evidence/screenshots/vextreme/vextreme-home/ja/foundation-light/320/acf336a25cb26d608254c610db93bf492f09d26e86a1300566de72dca0913bba.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/ja/foundation-light/768": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "ja",
+      "theme": "foundation-light",
+      "viewport": 768,
+      "sha256": "3500a29e05c28783eee1690222cf339c0cf53b9212bf01c756a76dec43e0b274",
+      "path": "evidence/screenshots/vextreme/vextreme-home/ja/foundation-light/768/3500a29e05c28783eee1690222cf339c0cf53b9212bf01c756a76dec43e0b274.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/ja/foundation/1440": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "ja",
+      "theme": "foundation",
+      "viewport": 1440,
+      "sha256": "1363d71785b29baf5dbbff57e3d9390462d2bc6a311ee00cee5fb10ffd043c4e",
+      "path": "evidence/screenshots/vextreme/vextreme-home/ja/foundation/1440/1363d71785b29baf5dbbff57e3d9390462d2bc6a311ee00cee5fb10ffd043c4e.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/ja/foundation/320": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "ja",
+      "theme": "foundation",
+      "viewport": 320,
+      "sha256": "1af75533d6a42c1aeeae5b80f76dd777deb7a525bdc7a56ac2c5b1762d83adbf",
+      "path": "evidence/screenshots/vextreme/vextreme-home/ja/foundation/320/1af75533d6a42c1aeeae5b80f76dd777deb7a525bdc7a56ac2c5b1762d83adbf.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/ja/foundation/768": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "ja",
+      "theme": "foundation",
+      "viewport": 768,
+      "sha256": "c3405b5d9491c47272afb4e6fd9cf030b0dce69b5d7d356471f7127001fc0c25",
+      "path": "evidence/screenshots/vextreme/vextreme-home/ja/foundation/768/c3405b5d9491c47272afb4e6fd9cf030b0dce69b5d7d356471f7127001fc0c25.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/zh/foundation-light/1440": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "zh",
+      "theme": "foundation-light",
+      "viewport": 1440,
+      "sha256": "7752faca39e8ca9c7765f13cc17a4054873d536a1167d10ac462c003b7b0d56b",
+      "path": "evidence/screenshots/vextreme/vextreme-home/zh/foundation-light/1440/7752faca39e8ca9c7765f13cc17a4054873d536a1167d10ac462c003b7b0d56b.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/zh/foundation-light/320": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "zh",
+      "theme": "foundation-light",
+      "viewport": 320,
+      "sha256": "074487a90ffb5bbde3d7f2ceca75a54d999c9af23acdff28f6949cdee91ac423",
+      "path": "evidence/screenshots/vextreme/vextreme-home/zh/foundation-light/320/074487a90ffb5bbde3d7f2ceca75a54d999c9af23acdff28f6949cdee91ac423.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/zh/foundation-light/768": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "zh",
+      "theme": "foundation-light",
+      "viewport": 768,
+      "sha256": "24ff8c2c6cecb3db9a4bbbe065209c1b81cbaab02bd00070e84d591e5e071b8b",
+      "path": "evidence/screenshots/vextreme/vextreme-home/zh/foundation-light/768/24ff8c2c6cecb3db9a4bbbe065209c1b81cbaab02bd00070e84d591e5e071b8b.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/zh/foundation/1440": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "zh",
+      "theme": "foundation",
+      "viewport": 1440,
+      "sha256": "a119fc74ff04b5a75249cbc0f970383dbf4b529f984be21f1979b28d5e3f95c9",
+      "path": "evidence/screenshots/vextreme/vextreme-home/zh/foundation/1440/a119fc74ff04b5a75249cbc0f970383dbf4b529f984be21f1979b28d5e3f95c9.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/zh/foundation/320": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "zh",
+      "theme": "foundation",
+      "viewport": 320,
+      "sha256": "00d9e6e5dc0ed66c9bc3a35c4e6e2c5626e324a9298e129eff8fcf0748252cf4",
+      "path": "evidence/screenshots/vextreme/vextreme-home/zh/foundation/320/00d9e6e5dc0ed66c9bc3a35c4e6e2c5626e324a9298e129eff8fcf0748252cf4.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/zh/foundation/768": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "zh",
+      "theme": "foundation",
+      "viewport": 768,
+      "sha256": "49db37da6f34d6733d7249319f4f8b906e90dea430d37849291e7b6428b85835",
+      "path": "evidence/screenshots/vextreme/vextreme-home/zh/foundation/768/49db37da6f34d6733d7249319f4f8b906e90dea430d37849291e7b6428b85835.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
     }
   }
 }
