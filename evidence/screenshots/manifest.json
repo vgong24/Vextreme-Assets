@@ -32,6 +32,51 @@
       },
       "captureKind": "localization"
     },
+    "vextreme/vextreme-home/en/foundation-light/1440": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "en",
+      "theme": "foundation-light",
+      "viewport": 1440,
+      "sha256": "45924021b0b925585128a25e64978728a97d75db65b263ed53a1754b54a4f344",
+      "path": "evidence/screenshots/vextreme/vextreme-home/en/foundation-light/1440/45924021b0b925585128a25e64978728a97d75db65b263ed53a1754b54a4f344.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/en/foundation-light/320": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "en",
+      "theme": "foundation-light",
+      "viewport": 320,
+      "sha256": "a99ec816c74f59e77dd99be07245bc6d938a358448f8e6d45ef4748cbb985a76",
+      "path": "evidence/screenshots/vextreme/vextreme-home/en/foundation-light/320/a99ec816c74f59e77dd99be07245bc6d938a358448f8e6d45ef4748cbb985a76.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
+    "vextreme/vextreme-home/en/foundation-light/768": {
+      "namespace": "vextreme",
+      "slug": "vextreme-home",
+      "locale": "en",
+      "theme": "foundation-light",
+      "viewport": 768,
+      "sha256": "f97cb57e04440810ad0d7841151f5d5932237b655c3af4de75812378c89a09d1",
+      "path": "evidence/screenshots/vextreme/vextreme-home/en/foundation-light/768/f97cb57e04440810ad0d7841151f5d5932237b655c3af4de75812378c89a09d1.png",
+      "source": {
+        "repository": "vgong24/Vextreme",
+        "commit": "a0b7353d73568f60d51f53ac562d856978587e92",
+        "path": "pages/vextreme-home.html"
+      },
+      "captureKind": "institutional-localization"
+    },
     "vextreme/vextreme-home/en/foundation/1440": {
       "namespace": "vextreme",
       "slug": "vextreme-home",
