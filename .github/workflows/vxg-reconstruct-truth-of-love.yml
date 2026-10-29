@@ -19,6 +19,8 @@ jobs:
           set -euo pipefail
           mkdir -p __assets
           cat .vxg-transfer/truth-of-love/*.b64 | base64 -d > __assets/3394ba90aafc4a89f1d1307c6f9267525d05bf68e757d5fa12e1031acbd147d3.jpg
+          wc -c __assets/3394ba90aafc4a89f1d1307c6f9267525d05bf68e757d5fa12e1031acbd147d3.jpg
+          sha256sum __assets/3394ba90aafc4a89f1d1307c6f9267525d05bf68e757d5fa12e1031acbd147d3.jpg
           test "$(wc -c < __assets/3394ba90aafc4a89f1d1307c6f9267525d05bf68e757d5fa12e1031acbd147d3.jpg)" -eq 16204
           echo "3394ba90aafc4a89f1d1307c6f9267525d05bf68e757d5fa12e1031acbd147d3  __assets/3394ba90aafc4a89f1d1307c6f9267525d05bf68e757d5fa12e1031acbd147d3.jpg" | sha256sum -c -
           git config user.name "github-actions[bot]"
