@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "vextreme.hires-record-cover-candidates/v1",
+  "records": [
+    {
+      "slug": "what-is-the-god-spark",
+      "sourcePath": "__assets/2bd560cef3ddd15e58b5e2b0383dba67d2fac2accf97e2ba5b15c49608238159.webp",
+      "sourceSha256": "2bd560cef3ddd15e58b5e2b0383dba67d2fac2accf97e2ba5b15c49608238159",
+      "sourceDimensions": {
+        "width": 640,
+        "height": 480
+      },
+      "restorationModel": "edsr",
+      "nativeScale": 4,
+      "outputPath": ".vxg-hires-candidates/what-is-the-god-spark.webp",
+      "outputSha256": "ed378aa27d33d4ccf13aa8378ba423e8505ada9c8ec41b4242b2028d7c021411",
+      "outputBytes": 157810,
+      "outputDimensions": {
+        "width": 2048,
+        "height": 1536
+      }
+    },
+    {
+      "slug": "clarity-on-christianity",
+      "sourcePath": "__assets/93e8f45a1cf67b8a40a8f09e7143e21956987f9a0e3f14234c048fdc0e162e82.webp",
+      "sourceSha256": "93e8f45a1cf67b8a40a8f09e7143e21956987f9a0e3f14234c048fdc0e162e82",
+      "sourceDimensions": {
+        "width": 480,
+        "height": 360
+      },
+      "restorationModel": "edsr",
+      "nativeScale": 4,
+      "outputPath": ".vxg-hires-candidates/clarity-on-christianity.webp",
+      "outputSha256": "e8e61c4cbb3dfe8fc7b19e4ea661b53f39d46e25d885dc199fc658c005aebaca",
+      "outputBytes": 402172,
+      "outputDimensions": {
+        "width": 2048,
+        "height": 1536
+      }
+    },
+    {
+      "slug": "what-about-buddhism",
+      "sourcePath": "__assets/5e2a523e20a78ac80544f0658de4083ece50a11d55a2d0879f587910005fdabc.webp",
+      "sourceSha256": "5e2a523e20a78ac80544f0658de4083ece50a11d55a2d0879f587910005fdabc",
+      "sourceDimensions": {
+        "width": 280,
+        "height": 210
+      },
+      "restorationModel": "lapsrn",
+      "nativeScale": 8,
+      "outputPath": ".vxg-hires-candidates/what-about-buddhism.webp",
+      "outputSha256": "0bcb688a88036c773a77987a89ac0c3683454770be597d7a0b2489d66d5ce6e7",
+      "outputBytes": 360674,
+      "outputDimensions": {
+        "width": 2048,
+        "height": 1536
+      }
+    },
+    {
+      "slug": "god-to-speak-of-the-truth-of-love",
+      "sourcePath": "__assets/3394ba90aafc4a89f1d1307c6f9267525d05bf68e757d5fa12e1031acbd147d3.jpg",
+      "sourceSha256": "3394ba90aafc4a89f1d1307c6f9267525d05bf68e757d5fa12e1031acbd147d3",
+      "sourceDimensions": {
+        "width": 280,
+        "height": 210
+      },
+      "restorationModel": "lapsrn",
+      "nativeScale": 8,
+      "outputPath": ".vxg-hires-candidates/god-to-speak-of-the-truth-of-love.webp",
+      "outputSha256": "9e7c002bec5088eabd89eefc05769c95eaf1c3fff114ef01a0328ba8e253763e",
+      "outputBytes": 299880,
+      "outputDimensions": {
+        "width": 2048,
+        "height": 1536
+      }
+    },
+    {
+      "slug": "why-financial-freedom-is-harder-to-trust",
+      "sourcePath": "__assets/44aaf3bf90838d73eff47c69273d9380ede268b25449213ebee2a227a0266701.jpg",
+      "sourceSha256": "44aaf3bf90838d73eff47c69273d9380ede268b25449213ebee2a227a0266701",
+      "sourceDimensions": {
+        "width": 200,
+        "height": 150
+      },
+      "restorationModel": "lapsrn",
+      "nativeScale": 8,
+      "outputPath": ".vxg-hires-candidates/why-financial-freedom-is-harder-to-trust.webp",
+      "outputSha256": "2cbeb475258dcfba4e68399cfabc289d1250f5618202213209d0e094da97b560",
+      "outputBytes": 289230,
+      "outputDimensions": {
+        "width": 2048,
+        "height": 1536
+      }
+    }
+  ]
+}
