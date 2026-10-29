@@ -1,0 +1,166 @@
+name: Restore high-resolution record covers
+
+on:
+  push:
+    branches:
+      - VXG-102926-chatgpt-hires-record-covers-a001
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: VXG-102926-chatgpt-hires-record-covers-a001
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install super-resolution runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --no-cache-dir "opencv-contrib-python-headless==4.10.0.84"
+          curl -fL --retry 4 --retry-delay 2 \
+            "https://github.com/Saafke/EDSR_Tensorflow/raw/master/models/EDSR_x4.pb" \
+            -o /tmp/EDSR_x4.pb
+          curl -fL --retry 4 --retry-delay 2 \
+            "https://github.com/fannymonori/TF-LapSRN/raw/master/export/LapSRN_x8.pb" \
+            -o /tmp/LapSRN_x8.pb
+          test -s /tmp/EDSR_x4.pb
+          test -s /tmp/LapSRN_x8.pb
+
+      - name: Restore exact approved cover compositions
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .vxg-hires-candidates
+          python - <<'PY'
+          import cv2, hashlib, json
+          from pathlib import Path
+
+          ROOT = Path('.')
+          OUT = ROOT / '.vxg-hires-candidates'
+          TARGET = (2048, 1536)
+
+          records = [
+              {
+                  'slug':'what-is-the-god-spark',
+                  'src':'__assets/2bd560cef3ddd15e58b5e2b0383dba67d2fac2accf97e2ba5b15c49608238159.webp',
+                  'model':'edsr','scale':4,'model_path':'/tmp/EDSR_x4.pb',
+              },
+              {
+                  'slug':'clarity-on-christianity',
+                  'src':'__assets/93e8f45a1cf67b8a40a8f09e7143e21956987f9a0e3f14234c048fdc0e162e82.webp',
+                  'model':'edsr','scale':4,'model_path':'/tmp/EDSR_x4.pb',
+              },
+              {
+                  'slug':'what-about-buddhism',
+                  'src':'__assets/5e2a523e20a78ac80544f0658de4083ece50a11d55a2d0879f587910005fdabc.webp',
+                  'model':'lapsrn','scale':8,'model_path':'/tmp/LapSRN_x8.pb',
+              },
+              {
+                  'slug':'god-to-speak-of-the-truth-of-love',
+                  'src':'__assets/3394ba90aafc4a89f1d1307c6f9267525d05bf68e757d5fa12e1031acbd147d3.jpg',
+                  'model':'lapsrn','scale':8,'model_path':'/tmp/LapSRN_x8.pb',
+              },
+              {
+                  'slug':'why-financial-freedom-is-harder-to-trust',
+                  'src':'__assets/44aaf3bf90838d73eff47c69273d9380ede268b25449213ebee2a227a0266701.jpg',
+                  'model':'lapsrn','scale':8,'model_path':'/tmp/LapSRN_x8.pb',
+              },
+          ]
+
+          model_cache = {}
+          manifest = {'schemaVersion':'vextreme.hires-record-cover-candidates/v1','records':[]}
+
+          for record in records:
+              src = ROOT / record['src']
+              raw = src.read_bytes()
+              source_sha = hashlib.sha256(raw).hexdigest()
+              assert source_sha == src.stem, (src, source_sha)
+
+              image = cv2.imread(str(src), cv2.IMREAD_COLOR)
+              if image is None:
+                  raise RuntimeError(f'cannot decode {src}')
+              h, w = image.shape[:2]
+
+              key=(record['model'],record['scale'],record['model_path'])
+              if key not in model_cache:
+                  sr = cv2.dnn_superres.DnnSuperResImpl_create()
+                  sr.readModel(record['model_path'])
+                  sr.setModel(record['model'], record['scale'])
+                  model_cache[key] = sr
+
+              restored = model_cache[key].upsample(image)
+
+              # Preserve the exact 4:3 authored composition. Super-resolution
+              # supplies learned detail; final Lanczos normalization avoids
+              # arbitrary hero dimensions across the five records.
+              restored = cv2.resize(restored, TARGET, interpolation=cv2.INTER_LANCZOS4)
+
+              # One deliberately mild unsharp pass: recover local edge clarity
+              # without changing layout, color family, or authored subject.
+              blur = cv2.GaussianBlur(restored, (0,0), 0.75)
+              restored = cv2.addWeighted(restored, 1.10, blur, -0.10, 0)
+
+              out_path = OUT / f"{record['slug']}.webp"
+              ok = cv2.imwrite(str(out_path), restored, [cv2.IMWRITE_WEBP_QUALITY, 96])
+              if not ok:
+                  raise RuntimeError(f'failed to write {out_path}')
+
+              out_bytes = out_path.read_bytes()
+              out_sha = hashlib.sha256(out_bytes).hexdigest()
+              oh, ow = restored.shape[:2]
+              manifest['records'].append({
+                  'slug': record['slug'],
+                  'sourcePath': record['src'],
+                  'sourceSha256': source_sha,
+                  'sourceDimensions': {'width':w,'height':h},
+                  'restorationModel': record['model'],
+                  'nativeScale': record['scale'],
+                  'outputPath': str(out_path),
+                  'outputSha256': out_sha,
+                  'outputBytes': len(out_bytes),
+                  'outputDimensions': {'width':ow,'height':oh},
+              })
+
+          (OUT / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
+          PY
+
+      - name: Verify candidates
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, hashlib
+          from pathlib import Path
+          import cv2
+          m=json.loads(Path('.vxg-hires-candidates/manifest.json').read_text())
+          assert len(m['records']) == 5
+          for r in m['records']:
+              p=Path(r['outputPath'])
+              b=p.read_bytes()
+              assert hashlib.sha256(b).hexdigest() == r['outputSha256']
+              im=cv2.imread(str(p), cv2.IMREAD_COLOR)
+              assert im is not None
+              h,w=im.shape[:2]
+              assert (w,h)==(2048,1536)
+              assert len(b) > 100_000
+          print(json.dumps(m, indent=2))
+          PY
+
+      - name: Commit restoration candidates
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .vxg-hires-candidates
+          git commit -m "VXG-102926: form high-resolution record cover candidates [VXG RealForever]"
+          git push origin HEAD:VXG-102926-chatgpt-hires-record-covers-a001
