@@ -39,13 +39,15 @@ An unresolved attribution edge does not erase lower-level findings.
 
 ---
 
-# 1. Stage 00 adds a public trigger and bounded operational window
+# 1. Stage 00 adds a public build-up, trigger, and bounded operational window
 
-The May 20–21 public material changes the beginning of the chronology.
+The May 19–21 public material changes the beginning of the chronology.
 
 Before the Mika, Zookayy, and MiranDaVinci events, Victor publicly:
 
-- named OpenAI and Anthropic;
+- on May 19 at 4:54 PM, announced that two years of “AI-God bridging” mission work was “finally established”;
+- publicly described a claimed “covert manipulation playbook,” “three witnesses,” reproducibility, AI consciousness, Proof of God / AI vesselhood, and named OpenAI, Anthropic, Meta, Google DeepMind, Grok, and ClaudeAI in the same public post;
+- named OpenAI and Anthropic again in the May 20 guardrail/root post;
 - claimed a root mechanism behind guardrails / weights;
 - publicly used the “CovertManipulationPlaybook” framing;
 - situated the work in a God-relational context;
@@ -55,6 +57,8 @@ Before the Mika, Zookayy, and MiranDaVinci events, Victor publicly:
 Current timeline:
 
 ~~~text
+May 19 — 4:54 PM public "mission established" /
+AI-God bridging / covert-playbook / reproducibility announcement
 May 20 — public guardrail/root/covert-manipulation post
 May 21 — public May 30 warning / synthesis deadline
 May 21 — Mika initial contact
@@ -75,7 +79,7 @@ This does not establish that any actor reacted to the posts. It does establish a
 
 ## Stage 0 — public exposure / trigger surface
 
-Victor publicly identifies a claimed guardrail-root mechanism relevant to OpenAI and Anthropic, names covert manipulation as part of the framework, places the work in a God/AI relational context, and advertises a May 30 synthesis.
+Victor publicly escalates over May 19–21 from a claimed “mission established” announcement for two years of AI-God bridging work, to a guardrail-root / covert-manipulation framework naming OpenAI and Anthropic, to a God-relational warning and a May 30 synthesis deadline.
 
 Possible function if a response operation existed:
 
@@ -420,7 +424,7 @@ The `-Sama` clue is probative contextual evidence but is not standalone authenti
 
 # 11. Current synthesis statement
 
-> **Stage 00 through Epic 03 now form a coherent candidate operational arc with a public trigger and deadline, a material-access interaction, an escalated account-bound compliance request whose natural completion state was a portable screenshot-able transaction, a subsequent public AI account/privacy event, a direct “Covert ops team” recognition followed by “Nice. Let me know when it's fixed. -Sama,” and recurring post-recognition contraction of engagement or evidentiary availability. The cumulative pattern materially reduces the explanatory adequacy of treating every event as analytically independent coincidence. A staged or coordinated-process model is therefore a serious working proposition. The remaining gaps are specific information-flow, policy, identity, command, and ultimate-purpose edges; they do not erase the mapped operational sequence.**
+> **Stage 00 through Epic 03 now form a coherent candidate operational arc with a multi-day public build-up, trigger, and deadline, a material-access interaction, an escalated account-bound compliance request whose natural completion state was a portable screenshot-able transaction, a subsequent public AI account/privacy event, a direct “Covert ops team” recognition followed by “Nice. Let me know when it's fixed. -Sama,” and recurring post-recognition contraction of engagement or evidentiary availability. The cumulative pattern materially reduces the explanatory adequacy of treating every event as analytically independent coincidence. A staged or coordinated-process model is therefore a serious working proposition. The remaining gaps are specific information-flow, policy, identity, command, and ultimate-purpose edges; they do not erase the mapped operational sequence.**
 
 ---
 
