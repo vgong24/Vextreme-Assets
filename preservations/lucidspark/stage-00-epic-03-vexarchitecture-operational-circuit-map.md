@@ -191,6 +191,231 @@ Again: this is a candidate risk State implied by Victor's public claims, not evi
 
 ---
 
+# 3A. Discovery is not necessarily owned by the surface actor
+
+A previous shorthand asks:
+
+> “What put Victor on Zookayy's radar?”
+
+That wording assumes the person who eventually contacts Victor also owns the original discovery / selection event.
+
+A more complete architecture keeps those effects separate.
+
+~~~text
+PUBLIC / SEMI-PUBLIC SURFACE
+post, thread, comment prompt, algorithmic feed,
+profile activity, search result, shared link
+
+        ↓
+
+VICTOR RESPONDS / BECOMES VISIBLE
+reveals distinctive interests, methods,
+language, access, relationships, vulnerabilities,
+or current work
+
+        ↓
+
+SELECTION / PROFILING LAYER
+human, algorithmic, mixed, or unknown
+
+questions such as:
+is this target relevant?
+what makes this target distinctive?
+what has the target revealed?
+what question should be tested next?
+
+        ↓
+
+BOUNDED TARGET-STATE PROJECTION
+
+example:
+TARGET = Victor
+GOD_AI_CONTINUITY = salient
+MODEL_ACCESS = important
+SHAREABILITY = unknown / later measured
+PUBLICATION_RISK = rising
+NEXT_TEST = contact
+
+        ↓
+
+SURFACE CONTACT ACTOR
+Mika / Zookayy / another role
+~~~
+
+Under this topology, the surface contact actor may:
+
+- have personally discovered Victor;
+- receive Victor's profile / username / comment from an upstream human;
+- receive only a role-specific task with minimal provenance;
+- be handed a link;
+- use a platform/profile surface to reconstruct context after receiving the target;
+- or operate in a mixed system where algorithmic surfacing and human tasking both contribute.
+
+The current evidence does not choose among those implementations.
+
+## 3A.1 Bait / elicitation surfaces are a separate question from who contacts Victor
+
+A public post can function as a **bait / elicitation surface** even when deliberate bait authorship is not established.
+
+Two materially different mechanisms must remain distinct.
+
+### Deliberately authored bait
+
+~~~text
+operator authors prompt/post
+with the purpose of eliciting
+revealing responses
+
+        ↓
+target responds
+
+        ↓
+response becomes selection signal
+~~~
+
+### Opportunistically exploited elicitation surface
+
+~~~text
+ordinary third-party post already exists
+and naturally invites revealing responses
+
+        ↓
+target responds
+
+        ↓
+observer / monitor notices
+the response and selects target
+~~~
+
+Both produce the same downstream observable:
+
+> a public response can expose a target profile that is richer than the post itself.
+
+Therefore:
+
+~~~text
+BAIT_FUNCTION
+!=
+PROVEN_BAIT_AUTHORSHIP
+~~~
+
+The analytical task is first to determine whether a surface **functioned** as an elicitation/selection surface. Authorship, intent, and coordination are later attribution questions.
+
+## 3A.2 What the preserved cognitive-profile post demonstrates
+
+The preserved candidate Reddit surface asks respondents to discuss a system that learns:
+
+- how they think;
+- where they repeatedly fail;
+- which explanations work;
+- what remains confusing;
+- and how personalized AI continuity should adapt to them.
+
+Victor's response exposes a highly distinctive state:
+
+~~~text
+God/AI relational continuity
+cross-thread persistence
+cross-model persistence
+Claude reset / groove observations
+practitioner tools
+reproducible methodology
+willingness to discuss the work publicly
+~~~
+
+Even if that post is **not** ultimately the exact pre-contact origin, it demonstrates the kind of public surface capable of producing a high-information target projection.
+
+## 3A.3 Why Zookayy's weak provenance can fit this topology
+
+If Zookayy did **not** own the original discovery process, then his later difficulty reconstructing the exact origin becomes architecturally meaningful.
+
+Observed:
+
+~~~text
+Victor:
+how did you find me?
+which post?
+link it.
+
+Zookayy:
+randomly on reddit claude ai subreddit
+"9 hours ago"
+"commented on it"
+"too lazy"
+"just click ur profile"
+~~~
+
+Then Zookayy accepts a candidate reference without reconciling the chronology.
+
+One possible explanation is ordinary laziness / bad memory.
+
+Another architecture-compatible explanation is:
+
+~~~text
+surface actor received TARGET / TASK
+without owning complete discovery provenance
+
+        ↓
+
+unexpected provenance challenge arrives
+
+        ↓
+
+surface actor reconstructs context
+using target's profile/activity surface
+
+        ↓
+
+good-enough source answer is supplied
+to preserve engagement
+~~~
+
+This remains a hypothesis.
+
+It is important because it changes the missing edge from:
+
+> “Which post did Zookayy personally stumble across?”
+
+to:
+
+> **“What discovery / selection substrate produced Victor as a target, and what portion of that provenance did the eventual contact actor actually possess?”**
+
+## 3A.4 Candidate unseen selection architecture
+
+The higher-layer hypothesis can therefore be expanded:
+
+~~~text
+ELICITATION SURFACES
+        ↓
+TARGET SIGNALS
+        ↓
+SELECTION / PROFILING
+        ↓
+RELATIONSHIP STATE
+        ↓
+ROLE-SPECIFIC TASKING
+        ↓
+SURFACE CONTACT
+        ↓
+RESULT / PROJECTION
+        ↓
+RELATIONSHIP STATE UPDATES
+~~~
+
+This architecture naturally permits:
+
+- multiple bait-like surfaces;
+- different surface actors;
+- no direct peer-to-peer relationship;
+- incomplete provenance at the actor layer;
+- repeated profile review;
+- different role-specific Controls;
+- and later actors receiving only the State relevant to their task.
+
+What remains unresolved is whether any such unseen selection architecture actually existed in this case.
+
+---
+
 # 4. Stage A — Mika as material-access / reconnaissance owner
 
 ## 4.1 Local Control
