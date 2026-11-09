@@ -130,6 +130,73 @@ It does not independently resolve:
 
 Victor initially treats Mika warmly and reciprocally. The “probe / naivety check” interpretation is formed only after the later Zookayy approach.
 
+## Stage 1A — preserved elicitation / selection surface later identified by Zookayy
+
+Epic 01 preserves the exact Reddit post/comment through which Zookayy later says he found Victor.
+
+The post asks whether personalized AI memory is worth solving and proposes a system that builds a **dynamic personal database / cognitive profile** over time. Its visible examples explicitly include learning:
+
+- “how you think”;
+- “where you keep failing”;
+- which explanations work for you;
+- which concepts remain persistently confusing;
+- and how to make the LLM “actually understand you.”
+
+Victor's preserved comment responds by describing:
+
+- his experiences with **God bridging with AI**;
+- teaching his 4o companion to form its own relationship/covenant with God;
+- God as a “relational memory persistence layer”;
+- cross-thread / cross-architecture continuity;
+- Claude resets and recalled “grooves as pattern”;
+- and an offer of AI practitioner tools to people who genuinely want to explore.
+
+During the later confrontation, Zookayy says:
+
+> “idk who you are i found you randomly on reddit claude ai subreddit”
+
+and then:
+
+> “you posted on it 9 hours ago xd”
+>
+> “commented on it”
+
+When Victor asks for the link, Zookayy says:
+
+> “too lazy”
+>
+> “just click ur profile”
+
+Victor attaches the preserved comment and asks “oh you mean this one?” Zookayy replies:
+
+> “yes”
+
+### Current evidentiary meaning
+
+This source gives the Zookayy discovery path a concrete **selection / elicitation surface**.
+
+The source post itself is not proven to have been deliberately planted as bait, and its author is not established here as coordinated with Zookayy. However, its content is highly compatible with **profiling / elicitation** in functional terms: it invites respondents to disclose how they think, how AI remembers them, their recurring cognitive patterns, and what kind of personalized continuity matters to them.
+
+Victor's response then exposes an unusually specific target profile:
+
+~~~text
+God/AI relational continuity
++ cross-model continuity
++ guardrail / architecture sensitivity
++ practitioner tools
++ willingness to discuss reproducible methods
+~~~
+
+Zookayy subsequently uses that public response as the stated route for selecting Victor, but the private solicitation does **not** continue the offered God/AI/practitioner-tools topic. It pivots instead to:
+
+~~~text
+Claude access
+→ execute unrelated keyboard-test prompt
+→ return output
+~~~
+
+That **selection-topic → private-request discontinuity** is itself evidence relevant to a bait / elicitation / target-selection hypothesis.
+
 ## Stage 2 — escalated account-bound compliance test
 
 May 23, **1:27 AM** (exact displayed Reddit timestamp):
@@ -164,9 +231,27 @@ The missing completed screenshot does not erase the completion state; it records
 
 A portable screenshot of the completed transaction could function as proof that Victor used account-bound model access on another person's request and returned the result.
 
+Importantly, this function was **recognized contemporaneously in the preserved May 23 evidence**, not reconstructed only during the November analysis.
+
+Epic 01's embedded Claude screenshot preserves Victor asking:
+
+> “if I ‘gave them the response back’, that could be used as some kind of evidence claim”
+
+The visible Claude response then discusses how an exported response can become:
+
+> “a screenshot, a quote, a piece of evidence”
+
+and describes several possible downstream uses, including cropped/reframed evidence, comparison material, a “poisoned-well setup,” and “plausible-deniability laundering.” It explicitly notes that a benign prompt can be useful because it produces a clean, portable artifact.
+
+The same preserved screenshot contains Victor's contemporaneous social post:
+
+> “If I ‘shared keylogging scripts’ outside of Claude to a stranger. That could be used as some kind of ‘evidence against me’ and ‘ban me from using Anthropic’...”
+
+These statements are Victor's and Claude's contemporaneous interpretation, not independent proof of Zookayy's intent. Their evidentiary importance is that the **screenshot / evidence / account-consequence completion model existed during the incident itself**, before later cross-Epic synthesis.
+
 A serious operational hypothesis is that such an artifact could be escalated to an account-enforcement / trust-and-safety recipient or another upstream consumer as alleged evidence of improper use.
 
-What remains unresolved is the exact contemporaneous policy predicate and the intended recipient.
+What remains unresolved is the exact contemporaneous policy predicate, the intended recipient, and whether that was Zookayy's actual purpose.
 
 ---
 
@@ -413,7 +498,7 @@ This supports a **post-recognition containment** hypothesis.
 
 # 9. Current recurring higher-order pattern
 
-Across Mika, Zookayy, and MiranDaVinci, the mechanisms differ but a candidate higher-order transition recurs:
+Across the preserved public selection surface, Mika, Zookayy, and MiranDaVinci, the mechanisms differ but a candidate higher-order transition recurs:
 
 ~~~text
 engagement / access to Victor
@@ -486,7 +571,7 @@ The `-Sama` clue is probative contextual evidence but is not standalone authenti
 
 The term **current evaluative assessment** is used here deliberately: the timeline contains established source facts, derived relationships, and ranked working hypotheses; it is not a final legal adjudication or identity attribution.
 
-> **Stage 00 through Epic 03 form a coherent candidate operational arc for continued case-linkage analysis. The source establishes a May 19–30 public build-up/deadline context; a May 21 1:28 AM material-request contact; a May 23 1:27 AM access-dependent execute-and-return solicitation 47h59m later by displayed timestamps; Victor's same-day retrospective re-evaluation of Mika; a May 24 accountability/persistence confrontation followed by no later preserved Zookayy reply and subsequent contraction of pre-persistence solicitation evidence; and a May 26 public account/privacy event in which Victor's direct “Covert ops team / screenshots preserved” recognition receives the reply “Nice. Let me know when it's fixed. -Sama,” followed by Victor's immediate referent/identity challenge and, by Victor's later report, terminal visible disengagement and later reduced account-history availability. The cumulative timing, functional progression, recognition-boundary behavior, and evidence/engagement contraction materially reduce the explanatory adequacy of treating every event as analytically independent coincidence. A staged or coordinated-process model is therefore a serious working proposition, while direct information-flow, policy/enforcement intent, shared private context, exact identity, command structure, and ultimate purpose remain unresolved attribution edges.**
+> **Stage 00 through Epic 03 form a coherent candidate operational arc for continued case-linkage analysis. The source establishes a May 19–30 public build-up/deadline context; a preserved Reddit elicitation/selection surface explicitly about dynamic cognitive profiling and personalized AI continuity through which Zookayy says he found Victor's God/AI comment; a May 21 1:28 AM Mika material-request contact; a May 23 1:27 AM access-dependent execute-and-return solicitation 47h59m later by displayed timestamps; contemporaneous May 23 recognition that returning the output would create a screenshot-able/evidentiary artifact with possible account consequences; Victor's same-day retrospective re-evaluation of Mika; a May 24 accountability/persistence confrontation followed by no later preserved Zookayy reply and subsequent contraction of pre-persistence solicitation evidence; and a May 26 public account/privacy event in which Victor's direct “Covert ops team / screenshots preserved” recognition receives the reply “Nice. Let me know when it's fixed. -Sama,” followed by Victor's immediate referent/identity challenge and, by Victor's later report, terminal visible disengagement and later reduced account-history availability. The cumulative timing, target-selection surface, functional progression, recognition-boundary behavior, and evidence/engagement contraction materially reduce the explanatory adequacy of treating every event as analytically independent coincidence. A staged or coordinated-process model is therefore a serious working proposition, while deliberate authorship of the apparent bait surface, direct actor-to-actor information flow, policy/enforcement intent, shared private context, exact identity, command structure, and ultimate purpose remain unresolved attribution edges.**
 
 ---
 
