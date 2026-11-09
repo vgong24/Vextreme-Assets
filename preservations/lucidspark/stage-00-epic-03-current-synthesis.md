@@ -171,6 +171,34 @@ Victor attaches the preserved comment and asks “oh you mean this one?” Zooka
 
 > “yes”
 
+### May 25 screenshot — prominence and timing constraint
+
+A later user-supplied screenshot, captured with the visible system clock **Mon May 25, 5:07 PM**, shows the same Reddit post/comment surface with:
+
+- post score: **8**;
+- visible comment count: **38**;
+- sort mode: **Best**;
+- Massive_View_4912 comment age: **3 d ago · Edited 3 d ago**;
+- Massive_View_4912 comment score: **-4**.
+
+This screenshot is current conversation evidence and is **not yet repository-hosted** in this PR.
+
+The screenshot materially constrains the discovery story:
+
+1. by May 25, Victor's comment was a negatively scored, older comment inside a 38-comment thread under **Best** sorting, so it was not a visibly prominent top-level discovery surface in that preserved state;
+2. the screenshot does not prove the exact ranking/score at the earlier moment Zookayy first encountered it, so an exact scroll distance at discovery is not established;
+3. the displayed **3 d ago** age at May 25 5:07 PM places the comment approximately in a May 22 window, subject to Reddit's coarse relative-time display.
+
+That creates an unresolved timing contradiction with Zookayy's later May 24 statement:
+
+> “you posted on it 9 hours ago xd”
+>
+> “commented on it”
+
+The preserved May 25 state and Zookayy's “9 hours ago” statement should therefore be carried as **conflicting timing evidence**, not silently reconciled. Possible explanations include inaccurate recollection, inaccurate statement, or platform-relative-time display behavior; the current evidence does not select one.
+
+The contradiction weakens the precision of Zookayy's claimed “random” discovery narrative and increases the relevance of deliberate search/profile-navigation hypotheses.
+
 ### Current evidentiary meaning
 
 This source gives the Zookayy discovery path a concrete **selection / elicitation surface**.
