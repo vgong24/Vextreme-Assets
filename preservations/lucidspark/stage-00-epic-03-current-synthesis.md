@@ -167,7 +167,28 @@ Taken literally, “9 hours ago” points to roughly **May 23 around 4:15 PM** �
 
 Therefore, whatever post/comment Zookayy meant by “9 hours ago” **cannot be the causal discovery source for the May 23 1:27 AM first contact as stated**. By then, Zookayy had already known enough about Victor to initiate the DM many hours earlier.
 
-The discovery explanation is therefore temporally non-causal as stated. The remaining possibilities are narrower: Zookayy was referring to a later post encountered after initial contact; was misremembering/misstating the age/source; or was retrospectively supplying a discovery narrative that did not actually explain the first outreach. The current evidence does not select among those possibilities.
+This does **not** invalidate the separate May 22-era candidate comment as a possible pre-contact discovery source. The May 25 screenshot showing that candidate as “3 d ago” is compatible with it existing before the May 23 1:27 AM outreach.
+
+The cleaner reconstruction is therefore:
+
+~~~text
+possible pre-contact discovery object
+(May 22-era God/AI comment)
+        ↓
+May 23 1:27 AM
+Zookayy initiates DM
+        ↓
+May 23 ~4:15 PM
+a different later post/comment exists
+if “9 hours ago” is literal
+        ↓
+May 24 ~1:15 AM
+Zookayy references that later item
+~~~
+
+This creates a distinct post-contact observation: Zookayy appears aware of **Victor's later Reddit activity after the initial DM began**. The preserved exchange (“just click ur profile”) also shows profile-navigation as part of the interaction.
+
+That supports a **continued profile/activity monitoring** hypothesis more strongly than a one-time random discovery model. It does not by itself establish systematic surveillance, coordination, or how the later item was found.
 
 When Victor asks for the link, Zookayy says:
 
@@ -183,7 +204,9 @@ Zookayy replies:
 
 > “yes”
 
-Because the user-supplied candidate does not cleanly fit Zookayy's own “9 hours ago” chronology, the later “yes” is **not reliable confirmation of the exact discovery source**. It is better treated as **acquiescence to Victor's offered candidate without visible chronology verification**.
+Because the user-supplied candidate does not cleanly fit Zookayy's later “9 hours ago” reference, the later “yes” is **not reliable confirmation that the candidate was the specific item Zookayy meant by “9 hours ago.”**
+
+However, the candidate's May 22-era age is compatible with it being an **earlier pre-contact discovery source**. The “yes” therefore remains ambiguous: it could be loose assent to the original discovery object, loose assent to a related comment, or simple acquiescence without chronology verification.
 
 That creates a different evidentiary question:
 
@@ -217,15 +240,15 @@ That creates an unresolved timing contradiction with Zookayy's May 24 statement:
 
 The contradiction is stronger than a mere Reddit-display ambiguity: if “9 hours ago” referred to the source of the original May 23 1:27 AM contact, it is temporally impossible as stated because the referenced time would fall later on May 23.
 
-The preserved evidence therefore supports only these narrower possibilities:
+The preserved evidence now supports a more specific split:
 
-- Zookayy was referring to a **different post/comment** than the one Victor later supplied;
-- Zookayy's “9 hours ago” claim was inaccurate;
-- or Zookayy loosely assented to Victor's offered candidate without checking whether it matched the chronology.
+- the May 22-era candidate may still be the **pre-contact discovery object**;
+- the “9 hours ago” reference, if literal, must describe a **different later post/comment encountered after initial contact**;
+- or the “9 hours ago” claim itself was inaccurate.
 
-This weakens the evidentiary value of the later “yes” as source identification. It also increases the relevance of a **frame-acquiescence / engagement-maintenance** hypothesis: Zookayy may have cared more about continuing the interaction than accurately identifying the discovery object.
+This means the later “yes” cannot safely collapse those two objects into one. It also adds a new behavioral signal: **post-contact awareness of Victor's later activity**.
 
-It does **not** independently prove deliberate deception or a planted bait surface.
+That signal is compatible with continued profile review / target monitoring. It does **not** independently prove systematic surveillance, deliberate deception, or a planted bait surface.
 
 ### Current evidentiary meaning
 
