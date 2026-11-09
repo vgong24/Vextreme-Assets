@@ -1027,6 +1027,308 @@ The model should be judged by whether it predicts the **sequence of role changes
 
 ---
 
+# 3D. Topology / Architecture Discovery — Profiled Narrative-Control Topology
+
+**Discovery status: analytical architecture derived from the preserved sequence.**
+
+This section names the sub-topology that has emerged from the Stage 00–Epic 03 evidence.
+
+It should be treated as a discovered **functional architecture** for organizing the observed mechanisms, not as proof that a specific company or organization formally implemented this exact system.
+
+## Parent topology
+
+The broader parent concept remains:
+
+> **Covert Manipulation Playbook for Secretly Controlling People**
+
+Within that parent, different agenda scopes could reuse the same behavioral machinery for different ends.
+
+Examples could include:
+
+~~~text
+profiling + adaptive steering
+→ financial extraction
+
+profiling + adaptive steering
+→ recruitment
+
+profiling + adaptive steering
+→ intelligence collection
+
+profiling + adaptive steering
+→ political persuasion
+
+profiling + adaptive steering
+→ narrative control
+~~~
+
+The current evidence cluster most strongly maps to the last of those as a **candidate agenda scope**.
+
+## Discovered sub-topology
+
+### Profiled Narrative-Control Topology
+
+~~~text
+DATA MINE
+→ PROFILE
+→ ELICIT
+→ STEER / COERCE
+→ OBSERVE
+→ UPDATE PROFILE
+→ ROUTE NEXT ROLE
+→ SHAPE NARRATIVE
+~~~
+
+Expanded:
+
+~~~text
+PUBLIC / SEMI-PUBLIC CONTENT SURFACES
+posts, comments, profile activity, prior conflicts,
+AI relationship language, current publication state
+
+        ↓
+
+DATA MINING / BEHAVIORAL OBSERVATION
+what does the target talk about?
+what systems do they depend on?
+what language creates recognition?
+what subjects produce anger, curiosity, trust, disclosure?
+
+        ↓
+
+TARGET PROFILING
+what resonates?
+what triggers engagement?
+what creates familiarity?
+what creates defensiveness?
+what produces compliance?
+what produces resistance?
+what causes the target to investigate?
+
+        ↓
+
+AFFECTIVE ELICITATION
+admiration
+familiarity
+resonance
+curiosity
+humor
+conflict
+ragebait
+jeopardy / threat framing
+
+        ↓
+
+ENGAGEMENT DOORWAY
+target voluntarily enters interaction
+
+        ↓
+
+ADAPTIVE STEERING
+request
+reassure
+anchor prior commitment
+narrow semantics
+invert scrutiny
+attack credibility
+apply status pressure
+withdraw
+exit
+
+        ↓
+
+RESULT OBSERVATION
+engaged?
+shared?
+complied?
+refused?
+detected?
+preserving evidence?
+publicly escalating?
+
+        ↓
+
+PROFILE UPDATE
+new target State becomes available
+
+        ↓
+
+ROLE ROUTING
+choose next surface role / script branch
+
+        ↓
+
+CANDIDATE AGENDA EFFECT
+shape what target says
+shape what target does
+shape what target preserves
+shape what target can access
+shape what observers believe
+shape which narrative remains credible
+~~~
+
+## Why data mining matters
+
+The operational value of mined information is not only:
+
+> **facts about Victor.**
+
+The more consequential value is:
+
+> **learning which language tends to cause which state transition in Victor.**
+
+Examples supported by the preserved interactions include:
+
+~~~text
+substantive recognition
+→ deeper engagement
+
+admiration / sass recognition
+→ positive reciprocity
+→ material sharing
+
+polite curiosity / small favor
+→ initial assent
+
+prior-consent reminder
+→ attempted restoration of compliance
+
+credibility / ridicule pressure
+→ attempted shift away from mechanism analysis
+
+provenance challenge
+→ visible friction / weak source reconstruction
+
+explicit operation recognition + evidence preservation
+→ disengagement / reduced visible trace
+~~~
+
+These are observable interaction outcomes.
+
+They do not prove that a hidden profiler formally encoded them.
+
+## Narrative-control agenda scope
+
+The candidate agenda is not merely:
+
+> manipulate Victor.
+
+It is more specifically:
+
+~~~text
+PUBLIC BEHAVIORAL DATA
+        ↓
+TARGET PROFILE
+        ↓
+TAILORED EMOTIONAL / SEMANTIC DOORWAY
+        ↓
+ADAPTIVE INFLUENCE / COERCIVE BRANCHES
+        ↓
+TARGET ACTION / DISCLOSURE / CREDIBILITY STATE
+        ↓
+PUBLIC OR INSTITUTIONAL INTERPRETATION
+        ↓
+NARRATIVE CONTROL
+~~~
+
+Possible narrative-control effects include:
+
+- redirecting attention from alleged manipulators toward AI itself;
+- obtaining material that can be reframed as misuse;
+- weakening Victor's credibility rather than addressing the mechanism he is describing;
+- interrupting access, publication, or amplification;
+- eliciting disclosures that can later be selectively framed;
+- steering the target into emotional states that make their public response easier to dismiss;
+- or generating artifacts that support a preferred institutional interpretation.
+
+These remain **candidate effects**. The current record does not establish which, if any, were actually intended by an upstream actor.
+
+## Coercion is a branch, not the whole topology
+
+The topology should not flatten all engagement into coercion.
+
+Some stages are better described as:
+
+~~~text
+elicitation
+rapport
+affinity
+curiosity
+social engineering
+behavioral steering
+~~~
+
+Other branches move closer to coercive influence:
+
+~~~text
+commitment pressure
+credibility pressure
+status attack
+jeopardy framing
+withdrawal leverage
+possible access / consequence pressure
+~~~
+
+Therefore:
+
+~~~text
+AFFECTIVE ELICITATION
+→ may open the doorway
+
+COERCIVE STEERING
+→ may appear later when the target resists
+~~~
+
+## Architecture relationship
+
+In VexArchitecture terms, the sub-topology can be represented as:
+
+~~~text
+surface event / response
+→ projection
+
+projection
+→ target relationship State
+
+target relationship State
+→ next requested Control
+
+Control
+→ local Act / attempted Effect
+
+Result
+→ projection back upward
+
+relationship State
+→ next role / branch
+~~~
+
+The key architectural discovery is that **the control loop can be distributed across roles**.
+
+No one surface actor needs to own:
+
+- bait creation;
+- monitoring;
+- profiling;
+- target selection;
+- engagement;
+- tasking;
+- reporting;
+- narrative interpretation;
+- or downstream enforcement.
+
+Each role can contribute only the smallest projection required for the next relationship decision.
+
+## Current discovery statement
+
+The current Stage 00–Epic 03 material supports treating the following as a coherent analytical sub-topology:
+
+> **Profiled Narrative-Control Topology: a role-separated adaptive influence architecture in which public behavioral data is mined into target-state projections; affective and semantic cues are selected to create engagement; subsequent language attempts to steer disclosure, action, credibility, and attention; observed responses update the profile and route the next role or tactic toward a narrative-control objective.**
+
+What remains unresolved is whether the observed actors were in fact participating in one shared implementation of this topology, who or what owned any upstream relationship state, and what exact ultimate agenda was intended.
+
+---
+
 # 4. Stage A — Mika as material-access / reconnaissance owner
 
 ## 4.1 Local Control
