@@ -186,9 +186,19 @@ May 24 ~1:15 AM
 Zookayy references that later item
 ~~~
 
-This creates a distinct post-contact observation: Zookayy appears aware of **Victor's later Reddit activity after the initial DM began**. The preserved exchange (“just click ur profile”) also shows profile-navigation as part of the interaction.
+This creates a distinct post-contact observation: Zookayy appears aware of **Victor's later Reddit activity after the initial DM began**.
 
-That supports a **continued profile/activity monitoring** hypothesis more strongly than a one-time random discovery model. It does not by itself establish systematic surveillance, coordination, or how the later item was found.
+The preserved exchange also gives a concrete retrieval method. When Victor asks for the exact link, Zookayy says:
+
+> “too lazy”
+>
+> “just click ur profile”
+
+This is stronger than merely showing that profile navigation was conceivable. It is a **procedural retrieval instruction**: Zookayy directs Victor to use Victor's own profile as the index for finding the referenced activity.
+
+The sentence does not grammatically say “I originally found you by clicking your profile,” so it should not be promoted into a verbatim confession of the first-discovery method. But functionally it shows that Zookayy knows and relies on Victor's profile as a way to surface the relevant comment/post activity.
+
+Together with the “9 hours ago” reference to activity that would post-date the initial DM, this supports a **continued profile/activity monitoring or repeated profile-review** hypothesis more strongly than a one-time random discovery model. It does not by itself establish systematic surveillance, coordination, or exactly when each profile visit occurred.
 
 When Victor asks for the link, Zookayy says:
 
