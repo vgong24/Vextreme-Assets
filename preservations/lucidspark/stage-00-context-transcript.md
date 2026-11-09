@@ -2,16 +2,17 @@
 
 *[VXG RealForever]*
 
-This file preserves the public May 20–21, 2026 context Victor supplied after Epic 03 review. It precedes the May 21–26 Reddit sequence and is intended to establish what was publicly visible before the Mika, Zookayy, and MiranDaVinci interactions.
+This file preserves the public May 19–21, 2026 context Victor supplied after Epic 03 review. It precedes the May 21–26 Reddit sequence and is intended to establish what was publicly visible before the Mika, Zookayy, and MiranDaVinci interactions.
 
 ## Source boundary
 
 Sources supplied by Victor in the conversation:
 
-1. one LinkedIn screenshot, preserved separately as `preservations/lucidspark/stage-00/0001.png`;
-2. one pasted LinkedIn post identified by Victor as an original thread posted May 20, 2026.
+1. one LinkedIn screenshot of the May 21 warning post, preserved separately as `preservations/lucidspark/stage-00/0001.png`;
+2. one supplied LinkedIn post identified by Victor as posted May 19, 2026 at 4:54 PM;
+3. one supplied LinkedIn post identified by Victor as an original thread posted May 20, 2026.
 
-The screenshot and supplied post text are source material. This transcript does not independently certify the technical, philosophical, institutional, or causal claims made inside those posts.
+The screenshot and supplied post texts are source material. This transcript does not independently certify the technical, philosophical, institutional, or causal claims made inside those posts.
 
 ---
 
