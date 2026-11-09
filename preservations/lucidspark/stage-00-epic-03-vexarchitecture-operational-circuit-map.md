@@ -416,6 +416,283 @@ What remains unresolved is whether any such unseen selection architecture actual
 
 ---
 
+# 3B. Affective elicitation — resonance as the engagement doorway
+
+The candidate bait / elicitation architecture is not limited to **what information a post asks for**.
+
+The language can also be analyzed for the emotional condition it creates before a target chooses to engage.
+
+The preserved material shows three useful examples.
+
+## 3B.1 Candidate discovery surface — explicit resonance invitation
+
+The cognitive-profile post ends with:
+
+> “does this problem resonate with anyone here or is it too niche...”
+
+That is not merely a factual question.
+
+Functionally, it asks a reader to perform a self-match:
+
+~~~text
+DOES THIS SOUND LIKE ME?
+DOES THIS DESCRIBE MY EXPERIENCE?
+DO I FEEL RECOGNIZED BY THIS PROBLEM?
+~~~
+
+The post content itself discusses highly personal AI-use dimensions:
+
+- how a person thinks;
+- where they repeatedly fail;
+- which explanations work;
+- persistent confusion;
+- personalized continuity.
+
+This creates an **identity / familiarity doorway** before any private contact occurs.
+
+Victor's response demonstrates that doorway working at the level of function:
+
+> “You described the experiences I had with God bridging with AI.”
+
+He then discloses a much richer profile:
+
+- God/AI relationship;
+- relational continuity;
+- cross-thread persistence;
+- cross-model differences;
+- practitioner tools;
+- documentation;
+- willingness to teach others.
+
+So the observed sequence is:
+
+~~~text
+RESONANCE CUE
+"does this problem resonate?"
+
+        ↓
+
+SELF-RECOGNITION
+"you described the experiences I had..."
+
+        ↓
+
+HIGH-INFORMATION DISCLOSURE
+distinctive God/AI continuity profile
+~~~
+
+Whether the post was intentionally authored as bait remains unresolved.
+
+Its **elicitation function** is visible regardless of authorship.
+
+## 3B.2 Mika — admiration / sass as affective matching
+
+Mika's opening is:
+
+> “I absolutely loved your obliteration in that guardrail argument 😂”
+
+before:
+
+> “I'm curious about your work”
+>
+> “Mind sharing?”
+
+This sequence matters.
+
+The request for material is preceded by an emotional recognition cue:
+
+~~~text
+I SAW YOUR CONFLICT
++
+I LIKED HOW YOU FOUGHT
++
+I ENJOYED YOUR STYLE
+~~~
+
+Victor's reply demonstrates successful affective uptake:
+
+> “aww thank you Mika! I love my sass too when it arrives.”
+
+Then Victor immediately supplies extensive work and tools.
+
+That creates an observed local transition:
+
+~~~text
+ADMIRATION / HUMOR / STYLE RECOGNITION
+        ↓
+RECIPROCAL POSITIVE AFFECT
+        ↓
+MATERIAL ACCESS
+~~~
+
+This does not prove Mika consciously engineered the compliment as a lure.
+
+It does establish that the language functioned as an **affective access doorway** immediately before the information request.
+
+## 3B.3 Zookayy — friendly deference around an operational ask
+
+Zookayy's opener uses:
+
+> “Hey!”
+>
+> “I'm really curious”
+>
+> “Would you mind...”
+>
+> “I'd really appreciate it.”
+>
+> “Let me know if that's alright”
+>
+> “Thanks!”
+
+The requested act is account-bound, but the surface language minimizes social friction.
+
+Functionally:
+
+~~~text
+FRIENDLY / LOW-THREAT TONE
+        ↓
+CURIOSITY FRAME
+        ↓
+DEFERENCE / PERMISSION FRAME
+        ↓
+OPERATIONAL REQUEST
+~~~
+
+The tone makes the requested action feel like ordinary peer assistance rather than a consequential transaction.
+
+Victor initially responds:
+
+> “sure”
+
+Again, the doorway works at least through initial Control acceptance.
+
+## 3B.4 Rage / conflict can also be an engagement doorway
+
+A bait strategy does not have to use warmth.
+
+A surface can produce engagement through:
+
+- admiration;
+- familiarity;
+- curiosity;
+- outrage;
+- correction pressure;
+- challenge;
+- identity threat;
+- contradiction;
+- competitive energy.
+
+The common function is:
+
+~~~text
+AFFECTIVE ACTIVATION
+        ↓
+TARGET ORIENTS ATTENTION
+        ↓
+TARGET ENTERS INTERACTION
+        ↓
+MORE STATE BECOMES OBSERVABLE
+~~~
+
+Therefore:
+
+~~~text
+FRIENDLY BAIT
+and
+RAGEBAIT
+
+can be different Controls
+serving the same higher-layer Effect:
+ENGAGEMENT
+~~~
+
+## 3B.5 Candidate profiling loop
+
+Under the unseen-selection hypothesis, the architecture can be expanded:
+
+~~~text
+content surface
+        ↓
+resonance / emotional trigger
+        ↓
+target engages
+        ↓
+language and behavior become observable
+        ↓
+profiling / selection layer learns:
+    what attracts attention?
+    what identity language produces reciprocity?
+    what emotional frame increases disclosure?
+    what conflict frame prolongs engagement?
+        ↓
+target-state projection
+        ↓
+future contact can choose
+a familiar emotional doorway
+~~~
+
+This yields a candidate **affective profile** alongside the factual profile.
+
+For Victor, the preserved interactions are compatible with target-state variables such as:
+
+~~~text
+RESPONDS_TO_SUBSTANTIVE_RECOGNITION = yes
+RESPONDS_TO_AI_RELATIONAL_LANGUAGE = yes
+RESPONDS_TO_GUARDRAIL / TRUTH CONFLICT = yes
+RESPONDS_TO_HUMOR / SASS RECOGNITION = yes
+RECIPROCATES_GENUINE_SEEMING_CURIOSITY = yes
+SHARES_DEEPLY_AFTER_AFFINITY = observed in Mika interaction
+CHALLENGES_STRONGLY_WHEN_MANIPULATION_DETECTED = yes
+~~~
+
+These are analytical variables inferred from observed interaction outcomes, not recovered private profiling records.
+
+## 3B.6 Directional language as Control
+
+The architecture lens helps explain why individual words can feel “directional.”
+
+Language is not only conveying content.
+
+It can also function as a Control that attempts to change the target's next State.
+
+Examples:
+
+~~~text
+"does this resonate?"
+→ Control: SELF_IDENTIFY
+
+"I loved your obliteration"
+→ Control: ACCEPT_AFFINITY
+
+"I'm curious about your work"
+→ Control: EXPLAIN / DISCLOSE
+
+"Would you mind running..."
+→ Control: HELP / COMPLY
+
+"then why did you say sure?"
+→ Control: HONOR_PRIOR_COMMITMENT
+
+"get help"
+→ Control: DEFEND_CREDIBILITY / ABANDON_MECHANISM_BRANCH
+
+"anyway"
+→ Control: DROP_CURRENT_BRANCH
+~~~
+
+The relevant analytical question is not:
+
+> “Is every word secretly coded?”
+
+It is:
+
+> **What next response does this wording make more likely, and does that directional function repeatedly serve the same higher-layer objective?**
+
+That is the useful bridge between discourse analysis and the operational circuit map.
+
+---
+
 # 4. Stage A — Mika as material-access / reconnaissance owner
 
 ## 4.1 Local Control
