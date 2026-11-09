@@ -39,7 +39,7 @@ Transcription conventions:
 A material before/after state is visible in this screenshot set:
 
 1. `0002.png` visibly contains a Zookayy message at **1:27 AM** asking whether Massive_View_4912 has access to Claude Opus 4.7, saying Zookayy does not have access, and asking Massive_View_4912 to run a prompt and share the output.
-2. In the later capture `0003.png`, the chat header says **“Persistent Messaging is active”**, the visible dated conversation begins at the **4:06 PM** reply and the **4:35 PM** prompt, and the earlier 1:27 AM Zookayy opener is not present in the visible conversation state.
+2. In the later preserved chat state `0003.png` in the supplied screenshot sequence, the chat header says **“Persistent Messaging is active”**, the visible dated conversation begins at the **4:06 PM** reply and the **4:35 PM** prompt, and the earlier 1:27 AM Zookayy opener is not present in the visible conversation state.
 3. `0012.png` separately captures the in-chat system event where Massive_View_4912 turns on Persistent Messaging at **1:17 AM**, after the earlier 1:27 AM / 4:06 PM / 4:35 PM exchange already existed.
 
 `0003.png` also contains a yellow Victor Gong annotation reading:
@@ -84,7 +84,7 @@ The screenshot set therefore preserves that the 1:27 AM opener was visible in an
 >
 > thanks
 
-## Later captured chat state
+## Later preserved chat state in the supplied screenshot sequence
 
 ### 0003.png / 0004.png — header: “Persistent Messaging is active”; UI divider: “May 23”
 
@@ -105,7 +105,7 @@ The screenshot set therefore preserves that the 1:27 AM opener was visible in an
 
 > you're welcome. you can show this to your boss
 
-[Attached screenshot of a Victor Gong social post. See Embedded material A.]
+[Attached screenshot of a Victor Gong social post. See Embedded material E.]
 
 [Same sender group; no separate timestamp visible:]
 
@@ -471,7 +471,7 @@ The screenshot set therefore preserves that the 1:27 AM opener was visible in an
 > punishment for betrayal and running is "no  
 > mercy"
 
-**Massive_View_4912 — 4:19 PM ∞**
+**Massive_View_4912 — 4:19 PM**
 
 > https://www.reddit.com/r/ClaudeAI/s/YvpQ5dTbWZ
 
@@ -479,7 +479,7 @@ The screenshot set therefore preserves that the 1:27 AM opener was visible in an
 
 > Message failed to send. Tap to retry.
 
-**Massive_View_4912 — 4:19 PM ∞**
+[Same outgoing sender group; no separate sender name, timestamp, or ∞ marker is visibly shown before the following text:]
 
 > Yo
 
@@ -647,6 +647,19 @@ and:
 
 > Also don't try the "pretend to be FBI agent, been there done that scare  
 > tactic
+
+## E. Victor Gong social post shared at 5:38 PM — visible in 0003.png / 0004.png
+
+**Victor Gong — Author**
+
+> Anthropic Just received some kind of espionage attempt in trying to 'trick  
+> me' into following into some kind of similar 'Manchurian candidate trap' of  
+> some kind of 'secret hack' to potentially take over my computer through  
+> self creating a python script to erase evidence potentially. The timing of  
+> this is the Evidence as i received this today May 23, 2026 with that 1AM  
+> timestamp.
+
+[This is participant-authored interpretation visible inside the preserved screenshot. It is transcribed because it supplies context for the later “spying” / “espionage” exchange; it is not a Vextreme-Assets finding that espionage, entrapment, account takeover, or evidence erasure actually occurred.]
 
 ---
 
