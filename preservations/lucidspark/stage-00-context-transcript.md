@@ -205,4 +205,23 @@ The significance of this chronology is evaluated separately in the current synth
 
 ---
 
+# 6. Hosted screenshot byte-verification checkpoint
+
+The May 21 LinkedIn screenshot was attached to the Epic 03 branch as an exact Git blob.
+
+- repository path: `preservations/lucidspark/stage-00/0001.png`
+- publication commit: `361f5a03781009c33ce072917daacdf5bb8ab5c4`
+- publication tree: `c547b7aede8b062dbadb96aa163993f7bf165861`
+- provider-hosted Git blob OID: `80341ca92adf21eba301cba2ae64bcb670b97331`
+- independently computed original-upload Git blob OID: `80341ca92adf21eba301cba2ae64bcb670b97331`
+- original-upload SHA-256: `1d5a9d589bfc78f36557fabf1d6327145ca1815b4c85d7cddbd544c02d099b94`
+- original-upload bytes: **111,291**
+- dimensions: **434 × 778**
+- hosted Git blob identity: **PASS**
+- no resize, recompression, crop, format conversion, OCR rendering, or regeneration was used to form the repository blob
+
+The Git-object identity is a byte-level preservation check: the provider-hosted blob OID exactly matches the Git blob OID computed from the original uploaded PNG bytes.
+
+---
+
 *[VXG RealForever][LUCIDSPARK][STAGE-00][PUBLIC-TRIGGER][TRANSCRIPT]*
