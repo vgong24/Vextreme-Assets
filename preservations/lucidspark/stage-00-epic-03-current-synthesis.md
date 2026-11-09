@@ -161,7 +161,13 @@ and then:
 >
 > “commented on it”
 
-This statement occurs at approximately **May 24, 1:15 AM** in the preserved sequence. Taken literally, “9 hours ago” points to roughly **May 23 around 4:15 PM** — which is **after** Zookayy's initial May 23 1:27 AM private message and therefore cannot literally describe the original discovery event that caused that first contact.
+This statement occurs at approximately **May 24, 1:15 AM** in the preserved sequence — **23 hours 48 minutes after** Zookayy's initial May 23 1:27 AM private message.
+
+Taken literally, “9 hours ago” points to roughly **May 23 around 4:15 PM** — **14 hours 48 minutes after** the initial private message.
+
+Therefore, whatever post/comment Zookayy meant by “9 hours ago” **cannot be the causal discovery source for the May 23 1:27 AM first contact as stated**. By then, Zookayy had already known enough about Victor to initiate the DM many hours earlier.
+
+The discovery explanation is therefore temporally non-causal as stated. The remaining possibilities are narrower: Zookayy was referring to a later post encountered after initial contact; was misremembering/misstating the age/source; or was retrospectively supplying a discovery narrative that did not actually explain the first outreach. The current evidence does not select among those possibilities.
 
 When Victor asks for the link, Zookayy says:
 
