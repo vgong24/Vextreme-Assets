@@ -109,6 +109,62 @@ Possible function if a response operation existed:
 
 > identify the target, subject matter, claimed discovery, public framing, and deadline.
 
+## Coordination-topology correction
+
+A prior analytical shorthand treated a **Mika → Zookayy direct information bridge** as though it were the principal missing coordination edge.
+
+That is too narrow.
+
+A coordinated system does not require surface participants to be directly connected to one another. The relevant topology may be:
+
+~~~text
+peer-to-peer:
+Mika ↔ Zookayy
+
+or
+
+hub-and-spoke:
+Mika → upstream coordinator ← Zookayy
+
+or
+
+layered / compartmentalized:
+Mika → handler / channel A
+                 ↓
+            upstream state
+                 ↓
+Zookayy ← handler / channel B
+~~~
+
+Under a hub-and-spoke or compartmentalized architecture:
+
+- Mika may never know Zookayy;
+- Zookayy may never know Mika;
+- neither surface actor needs the full operational purpose;
+- information can propagate through an upstream state, handler, queue, team, dashboard, or private channel;
+- tasking can be role-specific and temporally sequenced without any direct surface-visible relationship.
+
+Therefore, absence of a visible Mika↔Zookayy relationship is **not** equivalent to absence of coordination.
+
+The correct unresolved edge is broader:
+
+> **What coordination topology, if any, carried target-state information, tasking, or outcomes between the observed surface interactions?**
+
+Evidence that would discriminate among topologies includes:
+
+- a fact learned in one interaction appearing in a later actor's behavior;
+- timing that tracks completion/failure of prior stages;
+- role-specific handoffs;
+- common upstream language or status vocabulary;
+- shared private-context assumptions;
+- common reporting recipient;
+- task instructions or success/failure acknowledgements;
+- or direct peer-to-peer linkage.
+
+Direct peer contact is only **one** possible implementation of coordination.
+
+---
+
 ## Higher-layer candidate organizational-risk model
 
 **Status: hypothesis / analytical model, not attribution.**
