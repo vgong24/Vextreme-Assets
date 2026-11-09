@@ -13,7 +13,18 @@ Use a zero-padded numeric prefix so lexical order is also sequence order:
 ...
 ```
 
-Preserve the original screenshot/export bytes where practical; renaming for sequence order should not require re-encoding.
+## Evidence-fidelity invariant
+
+Preserved screenshots MUST retain the exact uploaded image bytes.
+
+- No resizing or downscaling.
+- No recompression or quality reduction.
+- No format conversion.
+- No cropping, sharpening, denoising, color adjustment, metadata-driven re-rendering, or other image processing.
+- Renaming for sequence order is permitted only when the file bytes remain unchanged.
+- SHA-256 before repository carriage MUST equal SHA-256 of the repository file after the write.
+
+Any byte-changing image transformation invalidates the preservation proof for that file and requires recovery from the original uploaded bytes.
 
 This namespace is intentionally separate from:
 
