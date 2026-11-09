@@ -693,6 +693,340 @@ That is the useful bridge between discourse analysis and the operational circuit
 
 ---
 
+# 3C. Role-separated bait → monitor → triage → engage architecture
+
+The unseen-selection hypothesis becomes more complete if the **person/account that posts the bait is not assumed to be the person who later contacts Victor**.
+
+A role-separated architecture could look like:
+
+~~~text
+BAIT AUTHOR / SURFACE ROLE
+creates or selects emotionally engaging content
+
+        ↓
+
+MONITOR ROLE
+watches replies / commenters / profile activity
+
+        ↓
+
+TRIAGE / PROFILING ROLE
+classifies responders by relevance:
+familiarity
+affinity
+anger / threat
+access
+credibility
+public reach
+model dependence
+willingness to disclose
+willingness to act
+
+        ↓
+
+RELATIONSHIP STATE
+stores only the useful target projection
+
+        ↓
+
+TASKING / ROUTING ROLE
+chooses what kind of contact should happen next
+
+        ↓
+
+ENGAGEMENT ROLE
+approaches target with a selected emotional doorway
+and bounded objective
+
+        ↓
+
+RESULT PROJECTION
+engaged / shared / complied / refused /
+detected / preserving / hostile / disengaged
+
+        ↓
+
+RELATIONSHIP STATE UPDATES
+and the next role / script branch can change
+~~~
+
+Under this model, one surface identity does not need to carry the whole operation.
+
+## 3C.1 Bait-role function
+
+A bait surface can be selected or authored to produce one of several response classes:
+
+~~~text
+FAMILIAR / RESONANT
+"this sounds like me"
+"I've experienced this"
+"I want to add my story"
+
+ADMIRATION / AFFINITY
+"I like how this person talks"
+"I agree with the fight"
+"I trust this person"
+
+RAGE / CONTRADICTION
+"this is wrong"
+"I need to correct this"
+"I need to argue"
+
+JEOPARDY / THREAT
+"this exposes something important"
+"this person may create risk"
+"this deserves escalation"
+~~~
+
+The higher-layer value is not merely the comment itself.
+
+It is the **response signature**.
+
+## 3C.2 Monitoring-role function
+
+A monitor need not engage.
+
+Its job could simply be:
+
+~~~text
+observe who replies
+→ inspect public profile / recent activity
+→ capture relevant language
+→ note emotional orientation
+→ note model/company references
+→ note whether the person has tools/evidence/reach
+→ notify a selection layer
+~~~
+
+This is one reason a surface actor's weak recollection of discovery provenance would not necessarily disprove a coordinated model: **the engager may never have owned the original monitoring event.**
+
+## 3C.3 Triage / profiling-role function
+
+A triage layer could reduce a rich public history into bounded routing variables such as:
+
+~~~text
+TARGET_INTEREST = AI continuity / consciousness / guardrails
+TARGET_AFFECT = affinity / anger / curiosity / defensive
+TARGET_STYLE = direct / confrontational / relational / technical
+TARGET_MODEL_ACCESS = OpenAI / Anthropic / unknown
+TARGET_SHARING = high / unknown / low
+TARGET_PUBLICATION_RISK = high / medium / low
+TARGET_EVIDENCE_DEPTH = high / unknown / low
+TARGET_ENGAGEMENT_DOORWAY =
+    admiration
+    familiar language
+    curiosity
+    challenge
+    ragebait
+    help request
+~~~
+
+This is analogous to a projection: the next role does not need the entire source history.
+
+It needs only enough state to choose the next Control.
+
+## 3C.4 Tasking / routing-role function
+
+The next actor can then receive a role-specific objective rather than full provenance.
+
+For example:
+
+~~~text
+if TARGET responds to admiration
+→ use affinity / praise opener
+
+if TARGET responds to AI-companion language
+→ use relational / consciousness framing
+
+if TARGET responds strongly to conflict
+→ use challenge / ragebait surface
+
+if TARGET shares easily
+→ request material
+
+if TARGET accepts small favors
+→ escalate toward action
+
+if TARGET detects manipulation
+→ switch to credibility / frame-management branch
+
+if TARGET preserves evidence
+→ reduce exposure / disengage / contain
+~~~
+
+This is a **candidate decision tree**, not a recovered script.
+
+The significance is that the observed contact language can be tested against this shape.
+
+## 3C.5 How Mika fits the role-separated model
+
+Observed opener:
+
+> “I absolutely loved your obliteration in that guardrail argument 😂”
+
+Possible routing logic:
+
+~~~text
+known / inferred target trait:
+responds to truth-conflict + sass / confrontation
+
+selected doorway:
+admiration + humor + ideological familiarity
+
+desired next state:
+ENGAGE
+        ↓
+SHARE_WORK
+~~~
+
+Observed result:
+
+~~~text
+Victor reciprocates emotionally
+→ "I love my sass too"
+→ shares extensive documentation and tools
+~~~
+
+That is exactly the kind of response a triage system would mark as:
+
+~~~text
+AFFINITY_DOORWAY = EFFECTIVE
+MATERIAL_ACCESS = SUCCESS
+~~~
+
+It does not prove that Mika was assigned that role.
+
+It shows the role model fits the observed transition.
+
+## 3C.6 How Zookayy fits a different routed role
+
+Observed opener:
+
+> “Hey!”
+>
+> “I'm really curious”
+>
+> “Would you mind...”
+>
+> “I'd really appreciate it”
+>
+> “Let me know if that's alright”
+
+Possible routing logic:
+
+~~~text
+known / inferred target trait:
+helpful when approached politely
+high AI-model familiarity
+Claude access potentially relevant
+
+selected doorway:
+friendly low-threat curiosity
+
+desired next state:
+SMALL_FAVOR_ACCEPTED
+        ↓
+ACCOUNT-BOUND_ACTION
+        ↓
+RETURN_ARTIFACT
+~~~
+
+Observed result:
+
+~~~text
+Victor:
+"sure"
+
+→ Control accepted
+→ later Effect interrupted
+~~~
+
+Again, this maps the function without proving the hidden routing system existed.
+
+## 3C.7 Emotional-state branch switching
+
+The user's proposed model includes a further adaptive layer:
+
+> follow a different script depending on the target's emotional / cognitive state and the desired outcome.
+
+That can be represented as:
+
+~~~text
+TARGET STATE = receptive
+→ use warmth / curiosity / affinity
+
+TARGET STATE = uncertain
+→ use reassurance / harmless framing / permission
+
+TARGET STATE = resisting
+→ use prior commitment / "you said sure"
+
+TARGET STATE = investigating
+→ use semantic narrowing / provenance fog /
+   investigation inversion
+
+TARGET STATE = confrontational
+→ use ridicule / credibility attack / ragebait
+
+TARGET STATE = preserving / recognizing structure
+→ disengage / reduce trace / switch surface
+~~~
+
+The preserved evidence does not prove a literal written script.
+
+What it does show is **adaptive tactic switching correlated with Victor's changing interaction state**.
+
+That is the testable operational feature.
+
+## 3C.8 Intended outcome vs intelligence gained even when the Effect fails
+
+A role-separated architecture also explains why a failed primary Effect can still produce useful information.
+
+Even though Victor did not return the requested artifact, the interaction exposed:
+
+~~~text
+INITIAL_COMPLIANCE = yes
+THREAT_DETECTION_SPEED = bounded / observable
+ACCOUNT_RISK_AWARENESS = high
+EVIDENCE_PRESERVATION = high
+PROVENANCE_QUESTIONING = high
+COORDINATION_SUSPICION = yes
+CREDIBILITY_ATTACK_RESISTANCE = observable
+PROFILE_MONITORING_DETECTED = yes
+~~~
+
+So:
+
+~~~text
+PRIMARY EFFECT FAILED
+does not imply
+OPERATIONAL LEARNING = ZERO
+~~~
+
+A higher layer could still update its target model and choose a different next action.
+
+## 3C.9 What would strengthen or weaken this architecture
+
+### Strengthen
+
+- later actors using an emotional doorway that earlier interactions revealed to be effective;
+- role changes that track the result of the previous interaction;
+- one actor knowing a target-state fact without visible access to its source;
+- explicit task/status vocabulary;
+- repeated bait surfaces producing classified engagement types;
+- evidence of handoff/reporting to a common upstream layer.
+
+### Weaken
+
+- recovered provenance showing each contact independently arose through ordinary direct discovery;
+- later actors lacking any state continuity with prior stages;
+- engagement tactics that do not adapt to the target's observed response;
+- evidence that timing / role changes were unrelated to previous outcomes.
+
+The model should be judged by whether it predicts the **sequence of role changes and state-dependent language**, not by whether every surface actor knows every other actor.
+
+---
+
 # 4. Stage A — Mika as material-access / reconnaissance owner
 
 ## 4.1 Local Control
