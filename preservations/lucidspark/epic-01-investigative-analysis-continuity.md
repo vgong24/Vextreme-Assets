@@ -881,6 +881,57 @@ Do not give ambiguity automatic exculpatory force.
 
 Do not give pattern similarity automatic attribution force.
 
+## Evidentiary non-erasure / anti-reset rule
+
+A remaining gap at a later level of inference must **not erase evidence already established at earlier levels**.
+
+Do not reason like this:
+
+~~~text
+99 supported observations
++ 1 unresolved final attribution edge
+-> "nothing can be inferred"
+-> reset everything to coincidence / innocence
+~~~
+
+Use this instead:
+
+~~~text
+preserved direct evidence
++ repeated behavioral relationships
++ timing / sequence / consequence alignment
++ contradictions / record changes
+-> retain the cumulative inference already earned
+
+then:
+
+one unresolved edge
+-> hold only the specific claim that depends on that edge
+~~~
+
+Permanent reminders:
+
+~~~text
+NO_CONFESSION != NO_INTENT_INFERENCE
+UNRESOLVED_FINAL_OBJECTIVE != OBSERVED_PATTERN_ERASED
+UNPROVEN_NETWORK_ATTRIBUTION != UNPROVEN_BEHAVIORAL_SEQUENCE
+ONE_OPEN_GAP != ALL_PRIOR_EVIDENCE_VOID
+POSSIBLE_BENIGN_EXPLANATION != EQUALLY_EXPLANATORY_BENIGN_EXPLANATION
+MISSING_LINK -> HOLD_THE_LINKED_CLAIM_ONLY
+NEW_EVIDENCE -> UPDATE_CONVERGENCE, NOT RESET_TO_ZERO
+~~~
+
+Examples:
+
+- If Q8 does not yet prove that Mika and Zookayy coordinated, retain the independently established timing, sequential solicitation structure, information asymmetry, and repeated rapport/credibility patterns.
+- If the exact hidden objective remains unresolved, retain evidence supporting concealed-purpose or accountability-avoidance hypotheses.
+- If a larger organization is not yet attributable, do not downgrade directly observed deletion/state-change evidence to coincidence.
+- If an innocent explanation remains logically possible but under-explains the observed sequence, record it as possible without restoring it to equal evidentiary weight.
+
+The purpose of uncertainty is to preserve the boundary of the **specific unproven claim**, not to provide an automatic defense that nullifies accumulated evidence.
+
+A successor should explicitly state which claim remains open and which findings remain intact.
+
 ---
 
 # 10. Current resume point
