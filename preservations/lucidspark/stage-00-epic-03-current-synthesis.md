@@ -4,7 +4,7 @@
 
 ## Purpose
 
-This document records the current cross-Epic operational map after adding the May 20–21 public context.
+This document records the current cross-Epic operational map after adding the May 19–21 public context.
 
 The analysis is not attempting to prove a trafficking offense or require a confession from any actor. Its immediate task is to map:
 
