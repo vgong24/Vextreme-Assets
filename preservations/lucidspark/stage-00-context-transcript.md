@@ -181,20 +181,28 @@ May 20
 public OpenAI + Anthropic / guardrail-root /
 CovertManipulationPlaybook context
         ↓
-May 21
-public warning:
-May 30 synthesis / "ending" AI-consciousness debate /
-God-relational preparation context
-        ↓
-May 21 — Epic 02 chronology
+May 21 — 1:28 AM
 Mika / TheAcheThatSpeaks approaches Victor
 through the guardrail / AI-work surface
         ↓
-May 23 — Epic 01 chronology
+May 21 — wall-clock time not preserved
+public warning:
+May 30 synthesis / "ending" AI-consciousness debate /
+God-relational preparation context
+[relative order versus Mika's 1:28 AM DM is not established]
+        ↓
+May 23 — 1:27 AM
 Zookayy approaches Victor
 with Claude-access / execute-and-return-output request
+[displayed interval from Mika's initial contact: 47h59m]
         ↓
-May 26 — Epic 03 chronology
+May 23 — 11:14 PM
+Victor reopens the Mika thread after the Zookayy encounter
+        ↓
+May 24
+Zookayy confrontation / Persistent Messaging boundary
+        ↓
+May 26
 MiranDaVinci r/OpenAI account/privacy incident
 and subsequent "Covert ops team" → "-Sama" exchange
         ↓
