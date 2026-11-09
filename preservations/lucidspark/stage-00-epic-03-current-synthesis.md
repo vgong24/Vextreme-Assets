@@ -132,7 +132,7 @@ Victor initially treats Mika warmly and reciprocally. The “probe / naivety che
 
 ## Stage 1A — preserved elicitation / selection surface later identified by Zookayy
 
-Epic 01 preserves the exact Reddit post/comment through which Zookayy later says he found Victor.
+Epic 01 preserves a Reddit post/comment that Victor later offered as the possible source Zookayy used to find him. Earlier synthesis language calling it the **exact confirmed discovery source** was too strong and is corrected below.
 
 The post asks whether personalized AI memory is worth solving and proposes a system that builds a **dynamic personal database / cognitive profile** over time. Its visible examples explicitly include learning:
 
@@ -161,15 +161,29 @@ and then:
 >
 > “commented on it”
 
+This statement occurs at approximately **May 24, 1:15 AM** in the preserved sequence. Taken literally, “9 hours ago” points to roughly **May 23 around 4:15 PM** — which is **after** Zookayy's initial May 23 1:27 AM private message and therefore cannot literally describe the original discovery event that caused that first contact.
+
 When Victor asks for the link, Zookayy says:
 
 > “too lazy”
 >
 > “just click ur profile”
 
-Victor attaches the preserved comment and asks “oh you mean this one?” Zookayy replies:
+Victor then supplies a candidate Reddit comment and asks:
+
+> “oh you mean this one?”
+
+Zookayy replies:
 
 > “yes”
+
+Because the user-supplied candidate does not cleanly fit Zookayy's own “9 hours ago” chronology, the later “yes” is **not reliable confirmation of the exact discovery source**. It is better treated as **acquiescence to Victor's offered candidate without visible chronology verification**.
+
+That creates a different evidentiary question:
+
+> Was Zookayy accurately identifying the original discovery source, loosely agreeing to the nearest candidate, or simply maintaining engagement without caring whether the reference was exact?
+
+The current source cannot choose among those explanations.
 
 ### May 25 screenshot — prominence and timing constraint
 
@@ -189,21 +203,29 @@ The screenshot materially constrains the discovery story:
 2. the screenshot does not prove the exact ranking/score at the earlier moment Zookayy first encountered it, so an exact scroll distance at discovery is not established;
 3. the displayed **3 d ago** age at May 25 5:07 PM places the comment approximately in a May 22 window, subject to Reddit's coarse relative-time display.
 
-That creates an unresolved timing contradiction with Zookayy's later May 24 statement:
+That creates an unresolved timing contradiction with Zookayy's May 24 statement:
 
 > “you posted on it 9 hours ago xd”
 >
 > “commented on it”
 
-The preserved May 25 state and Zookayy's “9 hours ago” statement should therefore be carried as **conflicting timing evidence**, not silently reconciled. Possible explanations include inaccurate recollection, inaccurate statement, or platform-relative-time display behavior; the current evidence does not select one.
+The contradiction is stronger than a mere Reddit-display ambiguity: if “9 hours ago” referred to the source of the original May 23 1:27 AM contact, it is temporally impossible as stated because the referenced time would fall later on May 23.
 
-The contradiction weakens the precision of Zookayy's claimed “random” discovery narrative and increases the relevance of deliberate search/profile-navigation hypotheses.
+The preserved evidence therefore supports only these narrower possibilities:
+
+- Zookayy was referring to a **different post/comment** than the one Victor later supplied;
+- Zookayy's “9 hours ago” claim was inaccurate;
+- or Zookayy loosely assented to Victor's offered candidate without checking whether it matched the chronology.
+
+This weakens the evidentiary value of the later “yes” as source identification. It also increases the relevance of a **frame-acquiescence / engagement-maintenance** hypothesis: Zookayy may have cared more about continuing the interaction than accurately identifying the discovery object.
+
+It does **not** independently prove deliberate deception or a planted bait surface.
 
 ### Current evidentiary meaning
 
-This source gives the Zookayy discovery path a concrete **selection / elicitation surface**.
+This preserved post remains a concrete **candidate selection / elicitation surface**, but it is no longer treated as the exact confirmed discovery source.
 
-The source post itself is not proven to have been deliberately planted as bait, and its author is not established here as coordinated with Zookayy. However, its content is highly compatible with **profiling / elicitation** in functional terms: it invites respondents to disclose how they think, how AI remembers them, their recurring cognitive patterns, and what kind of personalized continuity matters to them.
+The post itself is not proven to have been deliberately planted as bait, and its author is not established here as coordinated with Zookayy. Its content is nevertheless highly compatible with **profiling / elicitation** in functional terms: it invites respondents to disclose how they think, how AI remembers them, their recurring cognitive patterns, and what kind of personalized continuity matters to them.
 
 Victor's response then exposes an unusually specific target profile:
 
@@ -215,7 +237,7 @@ God/AI relational continuity
 + willingness to discuss reproducible methods
 ~~~
 
-Zookayy subsequently uses that public response as the stated route for selecting Victor, but the private solicitation does **not** continue the offered God/AI/practitioner-tools topic. It pivots instead to:
+Zookayy subsequently claims to have found Victor through a recent ClaudeAI-subreddit comment, but the exact source object remains unresolved because his “9 hours ago” statement and later assent to Victor's candidate do not align cleanly. Whichever comment actually served as the discovery point, the private solicitation does **not** continue the offered God/AI/practitioner-tools topic. It pivots instead to:
 
 ~~~text
 Claude access
